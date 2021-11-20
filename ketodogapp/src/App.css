@@ -1,0 +1,47 @@
+html { 
+  background: url("./Images/keto.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+*{
+  box-sizing: border-box;
+  max-width:100%;
+
+}
+
+
+
+
+.nav{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  background-color:#3e7c0b;
+  min-height: 10vh;
+  margin-top:-1%;
+  opacity:.8;
+
+}
+
+.nav-links{ 
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  width:50%;
+  list-style: none;
+
+
+}
+
+h2{
+  color:antiquewhite;
+  font-size:2rem;
+  font-weight:bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
