@@ -1,64 +1,77 @@
 import React, { useState } from "react";
 import "../CSS/SignUp.css";
 import axios from "axios";
+import { useHistory } from "react-router-dom"
 
 function SignUp() {
+
   const initialFormValues = {
     email: "",
-    password: "",
+    username: "",
+    password: ""
   };
+
+  const history = useHistory()
 
   const [formValues, setFormValues] = useState(initialFormValues);
 
-  const updateForm = (inputName, inputValue) => {
+
+  const handleChange = e => {
+    console.log("here", e.target.value)
     setFormValues({
-      ...formValues,
-      [inputName]: inputValue,
+        ...formValues,
+        [e.target.name]:e.target.value
     });
-  };
+}
 
-    const onChange = (evt) => {
-        const {name, value} = evt.target
-        updateForm(name, value)
-    }
 
-  const SubmitForm = () => {
-    const newFormValues = {
-      username: formValues.username.trim(),
-      password: formValues.password.trim(),
+      
+    const Register = (e) => {
+      e.preventDefault();
+      axios
+        .post(
+          "https://dogdietapp.herokuapp.com/register",
+          `grant_type=password&username=${formValues.username}&password=${formValues.password} & ${formValues.email}`,
+          {
+            headers: {
+              // btoa is converting our client id/client secret into base64
+              Authorization: `Basic ${btoa("lambda-client:lambda-secret")}`,
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+          },
+        )
+        .then((res) => {
+          console.log(res.data);
+          localStorage.setItem("token", res.data.access_token);
+          console.log(res.data)
+          history.push("/login")          
+        });
     };
+  
 
-    axios
-      .post("fakeapi.com", newFormValues)
-      .then((response) => {
-        setFormValues(initialFormValues);
-        console.log('here')
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-    SubmitForm();
-    console.log('here')
-  };
+  
 
   return (
     <div>
-      <form className="form" onSubmit={onSubmit}>
-        <label>Email:</label>
-        <input type="email" maxLength="30" id="email" placeholder="email" onChange={onChange} />
-        <label>Password:</label>
+      <form className="form" onSubmit={Register}>
+        <label htmlFor="username">UserName:</label>
+        <input type="username" name="username" id="username" placeholder="username" onChange={handleChange} value={formValues.username}/>
+        <label htmlFor="password">Password:</label>
+
         <input
+          name="password"
           type="password"
-          maxLength="30"
           id="password"
           placeholder="password"
-          onChange={onChange}
+          onChange={handleChange}
+          value={formValues.password}
         />
+        <label htmlFor='email'>Email:</label>
+        <input type= "email" name="email" id="email" placeholder="email" onChange={handleChange} value={formValues.email} />
+        
+        <div>
         <button>SignUp</button>
+        </div>
       </form>
     </div>
   );

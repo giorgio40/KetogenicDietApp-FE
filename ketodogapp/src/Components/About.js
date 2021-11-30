@@ -1,11 +1,12 @@
 import React from 'react'
-import "../CSS/SignIn.css";
-function SignIn() {
+
+function About() {
     return (
         <div>
+        TESTING 123!
             
         </div>
     )
 }
 
-export default SignIn
+export default About
