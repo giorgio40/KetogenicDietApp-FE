@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "../CSS/SignUp.css";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import * as yup from "yup";
 import SignUpSchema from "../schema/SignUpSchema";
-
+import { Route } from "react-router-dom"
+import Login from './Login'
 function SignUp() {
   const initialFormValues = {
     username: "",
@@ -94,7 +95,7 @@ function SignUp() {
     <>
     <div className="form-group">
       <h1>Welcome to Ketogenic Diets For Dog Cancer! Please Sign Up To Access Important Resources!</h1>
-        <form onSubmit={onSubmit} class="signup-form">
+        <form onSubmit={onSubmit} className="signup-form">
           <div>
             <em>
               <div>{formErrors.username}</div>
@@ -135,7 +136,7 @@ function SignUp() {
             <br/>
             <br/>
             <label>
-              Email:
+            Email:
               <input
                 type="email"
                 value={formValues.email}
@@ -157,6 +158,9 @@ function SignUp() {
           </div>
         </form>
       </div>
+      <Route path='/:login' component={Login}/>
+      <Link to="/login">Already a Member ? Click here to goto Login Page</Link>
+
     </>
   );
 }
