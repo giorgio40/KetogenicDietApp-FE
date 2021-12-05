@@ -1,80 +1,163 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../CSS/SignUp.css";
 import axios from "axios";
-import { useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom";
+import * as yup from "yup";
+import SignUpSchema from "../schema/SignUpSchema";
 
 function SignUp() {
-
   const initialFormValues = {
-    email: "",
     username: "",
-    password: ""
+    password: "",
+    email: "",
   };
 
-  const history = useHistory()
+  const initialFormErrors = {
+    username: "",
+    password: "",
+    email: "",
+  };
+
+  const initialSignup = [];
+  const initialDisabled = true;
 
   const [formValues, setFormValues] = useState(initialFormValues);
+  const [formErrors, setFormErrors] = useState(initialFormErrors);
+  const [signUp, setSignUp] = useState(initialSignup);
+  const [disabled, setDisabled] = useState(initialDisabled);
 
+  const { push } = useHistory();
 
-  const handleChange = e => {
-    console.log("here", e.target.value)
-    setFormValues({
-        ...formValues,
-        [e.target.name]:e.target.value
-    });
-}
-
-
-      
-    const Register = (e) => {
-      e.preventDefault();
-      axios
-        .post(
-          "https://dogdietapp.herokuapp.com/register",
-          `grant_type=password&username=${formValues.username}&password=${formValues.password} & ${formValues.email}`,
-          {
-            headers: {
-              // btoa is converting our client id/client secret into base64
-              Authorization: `Basic ${btoa("lambda-client:lambda-secret")}`,
-              "Content-Type": "application/x-www-form-urlencoded",
-            },
-          },
-        )
-        .then((res) => {
-          console.log(res.data);
-          localStorage.setItem("token", res.data.access_token);
-          console.log(res.data)
-          history.push("/login")          
+  const postNewSignUp = (newSignUp) => {
+    axios
+      .post("https://dogdietapp.herokuapp.com/createnewuser", newSignUp)
+      .then((res) => {
+        setSignUp([res.data, ...signUp]);
+        setFormValues(initialFormValues);
+        console.log(res.data);
+        console.log(newSignUp);
+        push("/login");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  const inputChange = (name, value) => {
+    yup
+      .reach(SignUpSchema, name)
+      .validate(value)
+      .then(() => {
+        setFormErrors({
+          ...formErrors,
+          [name]: "",
         });
-    };
-  
+      })
+      .catch((err) => {
+        setFormErrors({
+          ...formErrors,
+          [name]: err.errors[0],
+        });
+      });
 
-  
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
+  const formSubmit = () => {
+    const newSignUp = {
+      username: formValues.username.trim(),
+      password: formValues.password.trim(),
+      email: formValues.email.trim(),
+    };
+    postNewSignUp(newSignUp);
+  };
+
+  useEffect(() => {
+    SignUpSchema.isValid(formValues).then((valid) => {
+      setDisabled(!valid);
+    });
+  }, [formValues]);
+
+  const onChange = (evt) => {
+    const { name, value } = evt.target;
+    inputChange(name, value);
+  };
+
+  const onSubmit = (evt) => {
+    evt.preventDefault();
+    formSubmit();
+  };
 
   return (
-    <div>
-      <form className="form" onSubmit={Register}>
-        <label htmlFor="username">UserName:</label>
-        <input type="username" name="username" id="username" placeholder="username" onChange={handleChange} value={formValues.username}/>
-        <label htmlFor="password">Password:</label>
-
-        <input
-          name="password"
-          type="password"
-          id="password"
-          placeholder="password"
-          onChange={handleChange}
-          value={formValues.password}
-        />
-        <label htmlFor='email'>Email:</label>
-        <input type= "email" name="email" id="email" placeholder="email" onChange={handleChange} value={formValues.email} />
-        
-        <div>
-        <button>SignUp</button>
-        </div>
-      </form>
-    </div>
+    <>
+    <div className="form-group">
+      <h1>Welcome to Ketogenic Diets For Dog Cancer! Please Sign Up To Access Important Resources!</h1>
+        <form onSubmit={onSubmit} class="signup-form">
+          <div>
+            <em>
+              <div>{formErrors.username}</div>
+              <div>{formErrors.email}</div>
+              <div>{formErrors.password}</div>
+            </em>
+          </div>
+          <div>
+            <label>
+              Username:
+              <input
+                type="text"
+                value={formValues.username}
+                onChange={onChange}
+                name="username"
+                id="name-input"
+                placeholder="Username"
+                maxLength="30"
+              />
+            </label>
+            <br/>
+            <br/>
+            <br/>
+         
+            <label>
+              Password:
+              <input
+                type="password"
+                value={formValues.password}
+                onChange={onChange}
+                name="password"
+                id="password-input"
+                placeholder="password"
+                maxLength="30"
+              />
+            </label>
+            <br/>
+            <br/>
+            <br/>
+            <label>
+              Email:
+              <input
+                type="email"
+                value={formValues.email}
+                onChange={onChange}
+                name="email"
+                id="email-input"
+                placeholder="email"
+                maxLength="30"
+              />
+            </label>
+            <br />
+            <br />
+            <br />
+            <div id="submit">
+              <button disabled={disabled}>
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
-
 export default SignUp;
