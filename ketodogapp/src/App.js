@@ -21,9 +21,10 @@ function App() {
           <PrivateRoute path="/user/resources" component={Resources}/>
           <PrivateRoute path="/user/about" component={About}/>
           <PrivateRoute path="/user/mealplan" component={MealPlan} />
-      
-          <Route path="/login" component={Login} />
-          <Route path="/" component={SignUp} />
+
+          <Route exact path="/" component={SignUp} />
+           <Route  path="/login" component={Login} /> 
+          
         </Switch>
       </main>
     </div>
