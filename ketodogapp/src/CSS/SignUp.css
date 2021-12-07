@@ -1,17 +1,16 @@
 *{
     box-sizing: border-box;
-    
+    max-width: 100%;
 }
 
+.img-container {
+    background-repeat: no-repeat cover ;
+    width: 200%;
+    background-size: cover;
 
 
-html { 
-    background: url('../Images/keto.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-     background-size: cover;
-  }
+}
+
 
 
 h1{
@@ -20,6 +19,7 @@ h1{
     margin-top:5%;
     font-weight:bold;
     font-size:2.3rem;
+    
 }
 
 

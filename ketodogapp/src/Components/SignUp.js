@@ -4,8 +4,12 @@ import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
 import * as yup from "yup";
 import SignUpSchema from "../schema/SignUpSchema";
-import { Route } from "react-router-dom"
-import Login from './Login'
+
+import keto from "../Images/keto.jpg";
+
+
+
+
 function SignUp() {
   const initialFormValues = {
     username: "",
@@ -21,7 +25,8 @@ function SignUp() {
 
   const initialSignup = [];
   const initialDisabled = true;
-
+  
+  const [ isLoading, setIsLoading] = useState(false)
   const [formValues, setFormValues] = useState(initialFormValues);
   const [formErrors, setFormErrors] = useState(initialFormErrors);
   const [signUp, setSignUp] = useState(initialSignup);
@@ -37,6 +42,8 @@ function SignUp() {
         setFormValues(initialFormValues);
         console.log(res.data);
         console.log(newSignUp);
+        setIsLoading(true)
+        
         push("/login");
       })
       .catch((err) => {
@@ -93,9 +100,12 @@ function SignUp() {
 
   return (
     <>
-    <div className="form-group">
+    <div  className="img-container" style={{ backgroundImage:`url(${keto})`}} >
+    {isLoading=== true ? <div>Signing you up!</div> : ""}
+    <br/>
+    <br/>
       <h1>Welcome to Ketogenic Diets For Dog Cancer! Please Sign Up To Access Important Resources!</h1>
-        <form onSubmit={onSubmit} className="signup-form">
+        <form onSubmit={()=>onSubmit} className="signup-form">
           <div>
             <em>
               <div>{formErrors.username}</div>
@@ -158,8 +168,8 @@ function SignUp() {
           </div>
         </form>
       </div>
-      <Route path='/:login' component={Login}/>
       <Link to="/login">Already a Member ? Click here to goto Login Page</Link>
+      
 
     </>
   );

@@ -8,7 +8,7 @@ function Nav() {
      
         <ul className="nav-links">
        
-          <Link to="/">
+          <Link to="/userhome">
             <li>Home</li>
           </Link>
           <Link to="/resources">
