@@ -23,7 +23,7 @@ function App() {
           
 
           <Route exact path="/" component={SignUp} />
-          <Route path="/login" component={() => Login} />
+          <Route path="/login" component={ Login} />
           </Switch>
       </main>
     </div>

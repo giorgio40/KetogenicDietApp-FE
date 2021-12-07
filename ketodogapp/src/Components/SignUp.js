@@ -7,9 +7,6 @@ import SignUpSchema from "../schema/SignUpSchema";
 
 import keto from "../Images/keto.jpg";
 
-
-
-
 function SignUp() {
   const initialFormValues = {
     username: "",
@@ -25,8 +22,8 @@ function SignUp() {
 
   const initialSignup = [];
   const initialDisabled = true;
-  
-  const [ isLoading, setIsLoading] = useState(false)
+
+  const [isLoading, setIsLoading] = useState(false);
   const [formValues, setFormValues] = useState(initialFormValues);
   const [formErrors, setFormErrors] = useState(initialFormErrors);
   const [signUp, setSignUp] = useState(initialSignup);
@@ -42,8 +39,8 @@ function SignUp() {
         setFormValues(initialFormValues);
         console.log(res.data);
         console.log(newSignUp);
-        setIsLoading(true)
-        
+        setIsLoading(true);
+
         push("/login");
       })
       .catch((err) => {
@@ -72,7 +69,6 @@ function SignUp() {
       [name]: value,
     });
   };
-
   const formSubmit = () => {
     const newSignUp = {
       username: formValues.username.trim(),
@@ -100,12 +96,18 @@ function SignUp() {
 
   return (
     <>
-    <div  className="img-container" style={{ backgroundImage:`url(${keto})`}} >
-    {isLoading=== true ? <div>Signing you up!</div> : ""}
-    <br/>
-    <br/>
-      <h1>Welcome to Ketogenic Diets For Dog Cancer! Please Sign Up To Access Important Resources!</h1>
-        <form onSubmit={()=>onSubmit} className="signup-form">
+      <div
+        className="img-container"
+        style={{ backgroundImage: `url(${keto})` }}
+      >
+        {isLoading === true ? <div>Signing you up!</div> : ""}
+        <br />
+        <br />
+        <h1>
+          Welcome to Ketogenic Diets For Dog Cancer! Please Sign Up To Access
+          Important Resources!
+        </h1>
+        <form onSubmit={onSubmit} className="signup-form">
           <div>
             <em>
               <div>{formErrors.username}</div>
@@ -126,10 +128,10 @@ function SignUp() {
                 maxLength="30"
               />
             </label>
-            <br/>
-            <br/>
-            <br/>
-         
+            <br />
+            <br />
+            <br />
+
             <label>
               Password:
               <input
@@ -142,11 +144,11 @@ function SignUp() {
                 maxLength="30"
               />
             </label>
-            <br/>
-            <br/>
-            <br/>
+            <br />
+            <br />
+            <br />
             <label>
-            Email:
+              Email:
               <input
                 type="email"
                 value={formValues.email}
@@ -161,16 +163,16 @@ function SignUp() {
             <br />
             <br />
             <div id="submit">
-              <button disabled={disabled}>
-                Sign Up
-              </button>
+              <button disabled={disabled}>Sign Up</button>
             </div>
           </div>
         </form>
+        <div className="link">
+          <Link to="/login" style={{ textDecoration: "none", color: "white" }}>
+            Already a Member ? Click here to goto Login Page{" "}
+          </Link>
+        </div>
       </div>
-      <Link to="/login">Already a Member ? Click here to goto Login Page</Link>
-      
-
     </>
   );
 }

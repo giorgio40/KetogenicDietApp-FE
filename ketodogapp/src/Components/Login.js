@@ -44,8 +44,8 @@ function Login() {
   return (
     <>
       <h2> Please login In.</h2>
-      <form onSubmit={()=>login}>
-        {isLoading === true ? <div>Loggin you In!</div> : setIsLoading(false)}
+      <form onSubmit={login}>
+        {isLoading === true ? <div>Loggin you In!</div> : ""}
         <label>
           Username:
           <input
