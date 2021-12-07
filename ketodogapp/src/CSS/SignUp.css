@@ -1,25 +1,27 @@
 *{
     box-sizing: border-box;
-    
+    max-width: 100%;
+}
+
+.img-container {
+    background-repeat: no-repeat cover ;
+    width: 200%;
+    background-size: cover;
+    height:90vh;
+
+
 }
 
 
 
-html { 
-    background: url('../Images/keto.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-     background-size: cover;
-  }
-
-
 h1{
-    color:#8B5050;
+    color:#EAEDF2;
     text-align: center;
-    margin-top:5%;
-    font-weight:bold;
-    font-size:2.3rem;
+    margin-top:3%;
+    font-weight:400px;
+    font-size:3rem;
+    
+    
 }
 
 
@@ -53,6 +55,7 @@ label{
 
 .submit{
     max-width: 100%;
+    margin-bottom:5%;
 }
 
 button{
@@ -68,3 +71,14 @@ button{
     opacity: 0.7;
  
 }
+
+.link{
+    text-decoration:none;
+    text-align:center;
+    margin-top:2%;
+    font-size:1.5rem;
+}
+
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }

@@ -1,0 +1,35 @@
+.nav{
+    display:flex;
+    background:#88BB63;
+    height:15vh;
+    justify-content:space-around;
+    opacity:.8;
+
+    
+    
+}
+
+.nav-links{
+    display:flex;
+    justify-content:space-around;
+    width:50%;
+    align-items:center;
+    list-style:none;
+    font-size:1.5rem;
+}    
+
+
+.nav-links li{
+    color:#E5B906;
+}
+
+.nav h2{
+    text-align:center;
+    margin-top: 2%;
+    
+
+}
+
+.logo{
+    border-radius:50%;
+}
