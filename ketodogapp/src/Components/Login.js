@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import * as yup from "yup";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import "../CSS/Login.css";
+import * as yup from "yup"
+import LoginSchema from "../Schema/LoginSchema"
 
 function Login() {
   const [credentials, setCredentials] = useState({
