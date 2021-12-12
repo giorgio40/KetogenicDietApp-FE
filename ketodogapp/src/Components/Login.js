@@ -44,7 +44,7 @@ function Login() {
 
   return (
     <>
-      <div className="container" style={{ backgroundImage: `url(${cancer})` }}>
+      <div className="background-container" style={{ backgroundImage: `url(${cancer})` }}>
         <div>
           <h2> Please login In.</h2>
         </div>
@@ -64,7 +64,6 @@ function Login() {
                   setCredentials({ ...credentials, username: evt.target.value })
                 }
                 id="username"
-                maxLength="30"
                 placeholder="username"
               />
             </label>

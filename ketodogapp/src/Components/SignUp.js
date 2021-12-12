@@ -125,7 +125,6 @@ function SignUp() {
                 name="username"
                 id="name-input"
                 placeholder="Username"
-                maxLength="30"
               />
             </label>
             <br />
@@ -141,7 +140,6 @@ function SignUp() {
                 name="password"
                 id="password-input"
                 placeholder="password"
-                maxLength="30"
               />
             </label>
             <br />
@@ -156,7 +154,6 @@ function SignUp() {
                 name="email"
                 id="email-input"
                 placeholder="email"
-                maxLength="30"
               />
             </label>
             <br />

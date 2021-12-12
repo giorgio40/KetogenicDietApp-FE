@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .card-container {
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+      0 2px 4px rgba(0, 0, 0, 0.24);
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    margin: 1rem auto;
+    margin-bottom:3%;
+    width:90%;
+    
+    
+  }
+
+ .card-title{
+     font-weight:bold;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     text-align: center;
+     margin-top:1%;
+     font-size:1.5em;
+ }
+
+ .card-title h3 {
+    text-align:center;
+    
+ }
+
+
+  .card-body{
+      font-size: 1.5em;
+      font-weight:500;
+      font-family: "Helvetica Neue",
+  }
+  .image-container{
+      display:flex;
+      justify-content:center;
+  }
+  .btn{
+      display:flex;
+      justify-content:center;
+      align-items: center;
+   
+
+  }
+
+  .btn button{
+      font-size:1rem;
+      width:400px;
+
+      }

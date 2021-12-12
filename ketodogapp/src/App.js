@@ -10,21 +10,22 @@ import React from "react";
 import Home from "./Components/Home";
 import Nav from "./Components/Nav";
 
+
 function App() {
   return (
     <div className="App">
     <Nav/>
       <main>
         <Switch>
-          <PrivateRoute path="/user/home" component={Home} />
-          <PrivateRoute path="/user/resources" component={Resources} />
-          <PrivateRoute path="/user/about" component={About} />
-          <PrivateRoute path="/user/mealplan" component={MealPlan} />
-          
+          <PrivateRoute exact path="/home" component={Home} />
+          <PrivateRoute path="/resources" component={Resources} />
+          <PrivateRoute path="/about" component={About} />
+          <PrivateRoute path="/mealplan" component={MealPlan} />
+       </Switch>
 
           <Route exact path="/" component={SignUp} />
           <Route path="/login" component={ Login} />
-          </Switch>
+         
       </main>
     </div>
   );
