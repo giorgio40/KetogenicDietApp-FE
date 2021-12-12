@@ -8,7 +8,7 @@ function Nav() {
     <nav className="nav">
       <img src={Logo} alt="medical cross" className="logo" />
       <ul className="nav-links">
-        <Link to="/userhome" style={{ textDecoration: "none" }}>
+        <Link to="/home" style={{ textDecoration: "none" }}>
           <li>Home</li>
         </Link>
         <Link to="/resources" style={{ textDecoration: "none" }}>

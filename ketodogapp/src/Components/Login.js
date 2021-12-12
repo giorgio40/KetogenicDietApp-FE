@@ -1,20 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import "../CSS/Login.css";
-import * as yup from "yup"
-import LoginSchema from "../Schema/LoginSchema"
-
+import cancer from "../Images/cancer.jpg";
 function Login() {
-  const [credentials, setCredentials] = useState({
+  const initialFormErrors = {
     username: "",
     password: "",
-  });
-  const [isLoading, setIsLoading] = useState(false);
+  };
 
+  const initialFormValues = {
+    username: "",
+    password: "",
+  };
+
+  const [disabled, setDisabled] = useState();
+  const [isLoading, setIsLoading] = useState(false);
+  const [formErrors, setFormErrors] = useState(initialFormErrors);
+  const [credentials, setCredentials] = useState(initialFormValues);
   const { push } = useHistory();
 
-  const login = (e) => {
+  const postLogin = (e) => {
     e.preventDefault();
     axios
       .post(
@@ -36,38 +42,51 @@ function Login() {
       });
   };
 
-  const handleChange = (e) =>
-    setCredentials({
-      ...credentials,
-      [e.target.name]: e.target.value,
-    });
-
   return (
     <>
-      <h2> Please login In.</h2>
-      <form onSubmit={login}>
-        {isLoading === true ? <div>Loggin you In!</div> : ""}
-        <label>
-          Username:
-          <input
-            type="text"
-            name="username"
-            value={credentials.username}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          password:
-          <input
-            type="password"
-            name="password"
-            value={credentials.password}
-            onChange={handleChange}
-          />
-        </label>
-        <br />
-        <button>Log in</button>
-      </form>
+      <div className="background-container" style={{ backgroundImage: `url(${cancer})` }}>
+        <div>
+          <h2> Please login In.</h2>
+        </div>
+        <div className="form-container">
+          <form onSubmit={postLogin} className="login-form">
+            {isLoading === true ? <div>Loggin you In!</div> : ""}
+
+            <div>{formErrors.username}</div>
+            <div>{formErrors.passwordl}</div>
+            <label>
+              Username:
+              <input
+                type="text"
+                name="username"
+                value={credentials.username}
+                onChange={(evt) =>
+                  setCredentials({ ...credentials, username: evt.target.value })
+                }
+                id="username"
+                placeholder="username"
+              />
+            </label>
+            <label>
+              password:
+              <input
+                type="password"
+                name="password"
+                value={credentials.password}
+                onChange={(evt) =>
+                  setCredentials({ ...credentials, password: evt.target.value })
+                }
+                placeholder="password"
+                id="password-input"
+              />
+            </label>
+            <br />
+            <div className="button-div">
+              <button disabled={disabled}>Log in</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </>
   );
 }
