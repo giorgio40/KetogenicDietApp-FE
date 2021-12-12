@@ -15,8 +15,8 @@ export default function Card(props) {
             </div> 
             <div className="btn">
                 <button>
-                    <a href={props.link}>
-                 View More
+                    <a href={props.link} target="_blank">
+                    {props.text}
                     </a>
 
                 </button>
