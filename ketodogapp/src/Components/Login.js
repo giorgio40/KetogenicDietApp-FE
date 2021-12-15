@@ -38,7 +38,7 @@ function Login() {
         console.log(res.data);
         localStorage.setItem("token", res.data.access_token);
         setIsLoading(true);
-        push("/userhome");
+        push("/home");
       });
   };
 
