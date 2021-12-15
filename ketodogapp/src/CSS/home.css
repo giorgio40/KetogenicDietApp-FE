@@ -1,45 +1,63 @@
-html { 
-    background: url("./Images/keto.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+.container-img{
+  background-repeat: no-repeat cover;
+  background-size: cover;
+  height: 80vh;
+  margin-top:3%;
+  font-size: 2rem;
+}
+
+
+
+.cancer-heading{
+  font-size: 3rem;
+  color:#A42FF9;
+  font-weight:bold;
+}
+
+.paragraph{
+  font: size 1.5rem;
+  text-align:center;
+  margin-top:3%;
+  color:#ffffcc;
+  font-weight:400px;
+}
+
+.keto-heading{
+  font-size: 2.5rem;
+  color:#E8D1DD;
   
+}
+
+.keto-img{
+  background-repeat: no-repeat cover;
+  background-size: cover;
+  height: 110vh;
+  margin-top:5%;
+}
+
+ul li{
+  font-size:1.5rem;
+  color:#c9c0bb;
+  margin-top:3%;
+  margin-left:4%;
+  margin-right:auto;
+  font-weight:bold;
+  text-align:center;
+}
+.btn-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  margin-top:3%;
+  margin-left:2%;
   
-  *{
-    box-sizing: border-box;
-    max-width:100%;
+}
+.button{
+  width:10px 15px 15px 10px;
+  background:#FF6501;
+  text-align:center;
+  margin-top:5%;
+  border-radius:15px;
   
-  }
-  
-  
-  
-  
-  .nav{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    background-color:#3e7c0b;
-    min-height: 10vh;
-    margin-top:-1%;
-    opacity:.8;
-  
-  }
-  
-  .nav-links{ 
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    width:50%;
-    list-style: none;
-  
-  
-  }
-  
-  h2{
-    color:antiquewhite;
-    font-size:2rem;
-    font-weight:bold;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+}
