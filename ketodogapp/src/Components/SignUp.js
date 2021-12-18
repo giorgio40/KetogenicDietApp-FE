@@ -100,7 +100,7 @@ function SignUp() {
         className="img-container"
         style={{ backgroundImage: `url(${keto})` }}
       >
-        {isLoading === true ? <div>Signing you up!</div> : ""}
+        {isLoading  ? <div>Signing you up!</div> : ""}
         <br />
         <br />
         <h1>

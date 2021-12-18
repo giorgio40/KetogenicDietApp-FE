@@ -10,8 +10,15 @@ import React from "react";
 import Home from "./Components/Home";
 import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
+import  { SliderData } from "./Components/SliderData";
+
 
 function App() {
+
+
+
+
+
   return (
     <div className="App">
       <Nav/>
@@ -19,13 +26,15 @@ function App() {
         <Switch>
           <PrivateRoute exact path="/home" component={Home} />
           <PrivateRoute path="/resources" component={Resources} />
-          <PrivateRoute path="/about" component={About} />
-          <PrivateRoute path="/mealplan" component={MealPlan} />
+          <PrivateRoute
+            path="/about"
+            render={props => (
+              <About {...props} slides= {SliderData} />)} />
+          <PrivateRoute path="/mealplan" component={MealPlan}   />
         </Switch>
 
         <Route exact path="/" component={SignUp} />
         <Route path="/login" component={Login} />
-        <Footer/>
       </main>
     </div>
   );

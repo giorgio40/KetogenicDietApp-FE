@@ -35,9 +35,9 @@ function Login() {
         }
       )
       .then((res) => {
-        console.log(res.data);
+      
         localStorage.setItem("token", res.data.access_token);
-        setIsLoading(true);
+        setIsLoading(false);
         push("/home");
       });
   };

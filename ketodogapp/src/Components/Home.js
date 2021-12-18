@@ -99,7 +99,7 @@ const Home = () => {
         </div>
       </animated.div>
 
-      <animated.div style={props2}>
+      <animated.div style={props3}>
         <div>
           <div style={{ backgroundImage: `url(${dogs})` }} className="keto-img">
             <br/> 
