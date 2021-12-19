@@ -4,11 +4,12 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    margin-top:0;
 }
 
 .dog-img{
-    width:1000px;
-    height:600px;
+    width:800px;
+    height:500px;
     border-radius:10px;
 }
 
@@ -26,7 +27,7 @@
 .left-arrow{
     position:absolute;
     top:50%;
-    right:32px;
+    left:32px;
     font-size:3rem;
     color:#000;
     z-index:10;
@@ -43,4 +44,8 @@
     opacity: 1;
     transition-duration:1s;
     transform:scale(1.08);
+}
+
+.heading{
+    margin-top: 70px;
 }

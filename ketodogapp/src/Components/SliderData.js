@@ -1,25 +1,30 @@
-export const SliderData = [ {
-    
-    image:"./Images/marley.jpg"
+import marley1 from "../Images/marley.jpg";
+import marley2 from "../Images/marley2.jpg";
+import marley3 from "../Images/marley3.jpg";
+import marley4 from "../Images/marley4.jpg";
+import marley5 from "../Images/marley5.jpg";
+import marley6 from "../Images/marley6.jpg";
 
-},
-{
-    image:"./Images/marley2.jpg"
-},
+export const SliderData = [
+  {
+    image: marley1,
+  },
+  {
+    image: marley2,
+  },
 
-{
-    image:" ./Images/marley3.jpg"
-},
+  {
+    image: marley3,
+  },
 
-{
-    image: "./Images/marley4.jpg"
-},
-{
-    image: "./Images/marley5.jpg"
-},
+  {
+    image: marley4,
+  },
+  {
+    image: marley5,
+  },
 
-{
-    image: "./Images/marley6.jpg"
-}
-
-]
+  {
+    image: marley6,
+  },
+];

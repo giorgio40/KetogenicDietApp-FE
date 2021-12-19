@@ -4,7 +4,7 @@ function Footer() {
   return (
     <section className="footer-section">
       <section className="footer-right">
-            <div className="links">Important Links</div>
+        <div className="links">Important Links</div>
         <div>
           <a href="http://vhavets.com" target="_blank">
             Veterinary HealthCare Associates
@@ -26,22 +26,24 @@ function Footer() {
           </a>
         </div>
         <div>
-          <a href="https://www.amazon.com/Tripping-over-Truth-Overturning-Entrenched-ebook/dp/B01N25FPY9/ref=sr_1_1?keywords=tripping+over+the+truth&qid=1639597230&s=books&sr=1-1">Tripping Over the Truth book by Travis Cristopherson</a>
+          <a href="https://www.amazon.com/Tripping-over-Truth-Overturning-Entrenched-ebook/dp/B01N25FPY9/ref=sr_1_1?keywords=tripping+over+the+truth&qid=1639597230&s=books&sr=1-1">
+            Tripping Over the Truth book by Travis Cristopherson
+          </a>
         </div>
       </section>
       <section className="footer-left">
         <div>
-          Contact 
-          <br/>
-          <br/>
-
-          <a href="mailto: georgehatzigeorgio@gmail.com" target="_blank"> Send Email </a> <br/>  
-          
-
-            <br/>
-       
+          Contact
+          <br />
+          <br />
+          <a href="mailto: georgehatzigeorgio@gmail.com" target="_blank">
+            {" "}
+            Send Email{" "}
+          </a>{" "}
+          <br />
+          <br />
         </div>
-        <div>Copyright &copy;2021</div> <br/>
+        <div>Copyright &copy;2021</div> <br />
         <div>TECH SOLUTIONS INC</div>
       </section>
     </section>

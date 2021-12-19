@@ -19,7 +19,8 @@ h1{
     text-align: center;
     margin-top:3%;
     font-weight:400px;
-    font-size:3rem;
+    font-size:2rem;
+    margin-bottom:3%;
     
     
 }
@@ -27,7 +28,6 @@ h1{
 
 .signup-form{
     display:flex column;
-    margin-top:12%;
     justify-content:center;
     align-items:center;
     width:15%;
@@ -53,22 +53,30 @@ label{
     color:white;
 }
 
-.submit{
-    max-width: 100%;
-    margin-bottom:5%;
-}
+ 
+    
 
-button{
-    background-color:orange;
+
+.button{
     border: 0;
-    color: #fefbef;
-    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
     line-height: 2.5;
     width: 100%;
-    font-size:1rem;
-    padding:8px 12px;
-    opacity: 0.7;
+    font-size: 1rem;
+    padding: 16px 16px;
+    opacity: 0.9;
+    background: #E6C436;
+    border-radius: 15px;
+    margin-left: 1%;
+    
+  }
+  
+  button:hover{
+    transform:scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+    transition:.2s;
  
 }
 

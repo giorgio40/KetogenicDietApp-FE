@@ -35,25 +35,27 @@ function Login() {
         }
       )
       .then((res) => {
-      
         localStorage.setItem("token", res.data.access_token);
-        setIsLoading(false);
+        setIsLoading(true);
         push("/home");
       });
   };
 
   return (
     <>
-      <div className="background-container" style={{ backgroundImage: `url(${cancer})` }}>
+      <div
+        className="background-container"
+        style={{ backgroundImage: `url(${cancer})` }}
+      >
         <div>
-          <h2> Please login In.</h2>
+          <h2> Please login In</h2>
         </div>
         <div className="form-container">
           <form onSubmit={postLogin} className="login-form">
             {isLoading === true ? <div>Loggin you In!</div> : ""}
 
             <div>{formErrors.username}</div>
-            <div>{formErrors.passwordl}</div>
+            <div>{formErrors.password}</div>
             <label>
               Username:
               <input
@@ -68,7 +70,7 @@ function Login() {
               />
             </label>
             <label>
-              password:
+              Password:
               <input
                 type="password"
                 name="password"
