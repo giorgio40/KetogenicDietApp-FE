@@ -2,6 +2,8 @@
   box-sizing: border-box;
   max-width: 100%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap');
+
 
 .background-container {
   background-repeat: no-repeat cover;
@@ -59,6 +61,7 @@ button {
   background: #E6C436;
   border-radius: 15px;
   margin-left: 1%;
+  margin-top:7%;
 }
 
 button:hover{

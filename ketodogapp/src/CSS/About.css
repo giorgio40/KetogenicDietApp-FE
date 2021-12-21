@@ -1,6 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap');
+
 .slider{
     position:relative;
-    height:100vh;
+    height:80vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -48,4 +51,19 @@
 
 .heading{
     margin-top: 70px;
+    font-family:'Italiana';
+    font-size:3rem;
+}
+
+.about{
+    text-align:center;
+    font-family:'Italiana', serif;
+    font-weight:500;
+    font-size:1.5rem;
+    margin-bottom:25px;
+}
+
+hr{
+    width:50%;
+    margin-bottom:15px;
 }

@@ -22,6 +22,7 @@ function About(props) {
   return (
     <>
     <h2 className="heading">In Loving Memory of Marley</h2>
+      <hr/>
       <section className="slider">
         <FaArrowAltCircleLeft onClick={prevSlide} className="left-arrow" />
         <FaArrowAltCircleRight onClick={nextSlide} className="right-arrow" />
@@ -37,7 +38,14 @@ function About(props) {
             </div>
           );
         })}
+       
       </section>
+          <hr/>
+       <p className="about">This site was made in Memory of my heart Dog, Marley. Marley was diagnosed in May of 2017 with Lymphoma. She was immediately put on a raw ketogenic diet<br/>
+        Marley surpassed statistics of a prognosis of 1 year with chemo. Marley lasted 38 months post diagnosis. I believe the one thing that made her last that long post diagnosis is a
+        ketogenic diet. I made it my mission in her memory to try to help dogs that have developed cancer. Please, remember I am not a medical professional, Please do your research and seek medical attention for your dog<br/>
+        at a Licensed Veterinary Hospital.</p>
+
     </>
   );
 }

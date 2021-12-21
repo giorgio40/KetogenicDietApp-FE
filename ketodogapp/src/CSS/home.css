@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap');
+
+
+
 .container-img{
   background-repeat: no-repeat cover;
   background-size: cover;
@@ -43,14 +47,15 @@ ul li{
   margin-right:auto;
   font-weight:bold;
   text-align:center;
+  font-family: 'Italiana', serif;
 }
 .btn-container{
   display:flex;
   justify-content:center;
   align-items:center;
   width:100%;
-  margin-top:3%;
-  margin-left:2%;
+  margin-top:5%;
+  margin-left:17%;
   
 }
 .button{

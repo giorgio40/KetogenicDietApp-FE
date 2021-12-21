@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap');
+
+
 .nav{
     display:flex;
     background:#88BB63;
@@ -16,6 +19,7 @@
     align-items:center;
     list-style:none;
     font-size:1.5rem;
+    font-family:'Italiana', serif;
 }    
 
 
