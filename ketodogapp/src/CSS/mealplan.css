@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&family=Roboto&display=swap');
+
+
+
+
+.meal-plans{
+    text-align:center;
+    font-size:2.5rem;
+    font-weight:bold;
+    margin-top:4%;
+    font-family:roboto;
+    color:#E43433
+}

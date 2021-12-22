@@ -30,7 +30,7 @@ function App() {
         <Route exact path="/" component={SignUp} />
         <Route path="/login" component={Login} />
       </main>
-      <Footer/>
+      
     </div>
   );
 }
