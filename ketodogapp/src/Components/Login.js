@@ -13,7 +13,6 @@ function Login() {
     username: "",
     password: "",
   };
-
   const [disabled, setDisabled] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const [formErrors, setFormErrors] = useState(initialFormErrors);
@@ -44,7 +43,7 @@ function Login() {
   return (
     <>
       <div
-        className="background-container"
+        className="wrapper"
         style={{ backgroundImage: `url(${cancer})` }}
       >
         <div>
@@ -52,7 +51,7 @@ function Login() {
         </div>
         <div className="form-container">
           <form onSubmit={postLogin} className="login-form">
-            {isLoading === true ? <div>Loggin you In!</div> : ""}
+            {isLoading === true ? <div>Loggin you In!</div> : null}
 
             <div>{formErrors.username}</div>
             <div>{formErrors.password}</div>
@@ -83,8 +82,8 @@ function Login() {
               />
             </label>
             <br />
-            <div className="button-div">
-              <button disabled={disabled}>Log in</button>
+            <div className="button-container">
+              <button className="btn" disabled={disabled}>Log in</button>
             </div>
           </form>
         </div>

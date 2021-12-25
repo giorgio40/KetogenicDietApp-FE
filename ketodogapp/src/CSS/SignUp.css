@@ -5,9 +5,9 @@
 
 .img-container {
     background-repeat: no-repeat cover ;
-    width: 200%;
+    width: 100%;
     background-size: cover;
-    height:90vh;
+    height:100vh;
 
 
 }

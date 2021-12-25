@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import { axiosAuth } from "../Axios/axiosAuth";
 import MealPlanData from "../Components/MealPlanData"
 import mealplanimage from "../Images/mealplanimage.png"
+import "../CSS/mealplan.css"
+import Nav from "./Nav"
+import Footer from "./Footer"
+
 
 function MealPlan() {
   const [formState, setFormState] = useState({
-    weight: "",
+    weight: 1,
   });
   const [data, setData] = useState([]);
 
@@ -28,33 +32,34 @@ function MealPlan() {
   };
   return (
     <>
+    <Nav/>
       <div
-        className="background-container"
+        className="mealplan-wrapper"
          style={{ backgroundImage: `url(${mealplanimage})` }}
       >
-        <h3>Meal Plans</h3>
+        <h3 className="meal-plan-heading">Meal Plans</h3>
         <div>
-          <p>
+          <p className="meal-plan-paragraph">
             Here you will select your dogs weight and then you will see the
             complete and balanced meal plan
           </p>
-          <p>
+          <p className="meal-plan-paragraph">
             There is a few things you will need to have in order to start the
             diet.First, you will need a scale to meaure out exactly the portions
             in grams.
           </p>
-          <p>
+          <p className="meal-plan-paragraph">
             The diet is for a days worth of food for your dog. It contains
             several supplemnts to make it complete and balanced.
           </p>
-          <p>
-            PLEASE DONT COOK THE FaTS! Cooked fats can lead to pancreatitis. The
+          <p className="meal-plan-paragraph">
+            PLEASE DONT COOK THE FATS! Cooked fats can lead to pancreatitis. The
             meal plan is meant to be served raw. At ketopet sanctuary all the
-            dogs that had cancer were fed raw even ones undergoing chemo and
-            never had a problem
+            dogs that had cancer were fed raw , even ones undergoing chemo and
+            never had a problem.
           </p>
         </div>
-        <form onSubmit={handleSubmit}>
+        <form  className="form-weight" onSubmit={handleSubmit}>
           <label htmlFor="weight">
             Please Select your dog's weight:
             <select
@@ -79,6 +84,7 @@ function MealPlan() {
         </form>
       </div>
       <MealPlanData data={data}/>
+    <Footer />
     </>
   );
 }

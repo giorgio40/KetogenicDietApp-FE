@@ -13,7 +13,7 @@
     align-items:center;
     background:black;
     color:white;
-    height:23vh;
+    height:26vh;
     opacity:.9;
 
     
@@ -35,13 +35,14 @@
     align-items:center;
     text-align:center; 
     font-size:1.1rem; 
-    margin:2%;  
+    margin:3%;  
 }
 
 .footer-right a{
     text-decoration: none;
     color:white;
-    margin:1%;
+    
+    
     
 }
 
@@ -66,3 +67,203 @@
     color:black;
 }
 
+
+@media only screen and (min-width:1200px) {
+
+    .footer-container{
+        display:flex column;
+        justify-content:center;
+        align-items:center;
+     }
+     
+     .footer-section{
+         display:flex; 
+         justify-content:center;
+         align-items:center;
+         background:black;
+         color:white;
+         height:26vh;
+         opacity:.9;
+     
+         
+     }
+     
+     .links{
+         margin-top:0 !important;
+     }
+     .section{
+         display:flex;
+         justify-content:center;
+         align-items:center;
+     }
+     .footer-right{
+         display:flex column;
+         width:50%;
+         height:17vh;
+         justify-content:center;
+         align-items:center;
+         text-align:center; 
+         font-size:1.1rem; 
+         margin:3%;  
+     }
+     
+     .footer-right a{
+         text-decoration: none;
+         color:white;
+         
+         
+         
+     }
+     
+     .footer-right div{
+         margin:1%;
+         
+     }
+     
+     .footer-left{
+         display:inline-block;
+         width:50%;
+         height:12vh;
+         text-align:center;
+         font-size:1.1rem;
+     }
+     
+     .footer-left a{
+         text-decoration:none;
+     }
+     
+     .links{
+         color:black;
+     }
+
+}
+
+@media  screen and (min-width:992px){
+    .footer-container{
+        display:flex column;
+        justify-content:center;
+        align-items:center;
+     }
+     
+     .footer-section{
+         display:flex; 
+         justify-content:center;
+         align-items:center;
+         background:black;
+         color:white;
+         height:26vh;
+         opacity:.9;
+     
+         
+     }
+     
+     .links{
+         margin-top:0 !important;
+     }
+     .section{
+         display:flex;
+         justify-content:center;
+         align-items:center;
+     }
+     .footer-right{
+         display:flex column;
+         width:50%;
+         height:17vh;
+         justify-content:center;
+         align-items:center;
+         text-align:center; 
+         font-size:1.1rem; 
+         margin:3%;  
+     }
+     
+     .footer-right a{
+         text-decoration: none;
+         color:white;
+         
+         
+         
+     }
+     
+     .footer-right div{
+         margin:1%;
+         
+     }
+     
+     .footer-left{
+         display:inline-block;
+         width:50%;
+         height:12vh;
+         text-align:center;
+         font-size:1.1rem;
+     }
+     
+     .footer-left a{
+         text-decoration:none;
+     }
+     
+     .links{
+         color:black;
+     }
+
+    
+}
+
+@media  screen and (min-width:600px){
+    .footer-container{
+        display:flex column;
+        justify-content:center;
+        align-items:center;
+     }
+     
+     .footer-section{
+         display:flex; 
+         justify-content:center;
+         align-items:center;
+         background:black;
+         color:white;
+         height:26vh;
+         opacity:.9;
+     
+         
+     }
+     
+     .links{
+         margin-top:0 !important;
+     }
+     .section{
+         display:flex;
+         justify-content:center;
+         align-items:center;
+     }
+     .footer-right{
+         display:flex column;
+         width:50%;
+         height:20vh;
+         justify-content:center;
+         align-items:center;
+         text-align:center; 
+         margin:3%;  
+     }
+     
+     .footer-right a{
+         text-decoration: none;
+         color:white;
+         font-size:.8rem;
+         
+         
+         
+     }
+     
+     .footer-right div{
+         margin:1%;
+         
+     }
+     
+     .footer-left{
+         font-size:.8rem;
+     }
+     
+     
+     
+
+}

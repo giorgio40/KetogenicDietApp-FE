@@ -37,3 +37,18 @@
 .logo{
     border-radius:50%;
 }
+.button-div{
+    max-width:40%;
+    margin-top:1%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.logout-btn{
+    padding:8px 22px;
+    text-align:center;
+    background:#D7C446;
+    color:white;
+
+}

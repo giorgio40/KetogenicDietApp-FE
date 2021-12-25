@@ -2,8 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../CSS/Nav.css";
 import Logo from "../Images/is.jpg";
+import { useHistory } from "react-router-dom";
 
 function Nav() {
+  const history = useHistory();
+
+  const handleClick = () => {
+    localStorage.removeItem("token");
+    history.push("/");
+  };
+
   return (
     <nav className="nav">
       <img src={Logo} alt="medical cross" className="logo" />
@@ -21,6 +29,11 @@ function Nav() {
           <li>About</li>
         </Link>
       </ul>
+      <div className="button-div">
+        <button className="logout-btn" onClick={handleClick}>
+          Logout
+        </button>
+      </div>
     </nav>
   );
 }

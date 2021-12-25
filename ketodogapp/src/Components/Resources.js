@@ -7,11 +7,16 @@ import image3 from "../Images/drnations.jpg";
 import image4 from "../Images/thomassandberg.jpg";
 import image5 from "../Images/thomasseyfried.png";
 import image6 from "../Images/warburg.jpg";
+import Nav from './Nav'
+import Footer from "./Footer"
 
 import "../CSS/Resources.css";
 
 function Resources(props) {
+
   return (
+    <>
+    <Nav/>
     <div>
       <div>
         <Card
@@ -67,6 +72,8 @@ function Resources(props) {
         />
       </div>
     </div>
+  <Footer/>
+  </>
   );
 }
 

@@ -1,0 +1,17 @@
+.data-container{
+    margin-top:3%;
+}
+
+
+.meal-plan-data-paragraphs{
+    display:flex;
+    font-family:roboto;
+    align-items:center;
+    justify-content:center;
+    background:#293A42;
+    font-size:1.5rem;
+    margin:2px;
+    font-weight:bold;
+    color:#DCC540;
+    
+}

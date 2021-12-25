@@ -3,9 +3,18 @@ import { useSpring, animated } from "react-spring";
 import cancer from "../Images/cancerphoto.jpg";
 import "../CSS/home.css";
 import keto from "../Images/ketogenic-diet-for-dogs.jpg";
-import { Link } from "react-router-dom";
+import { Link ,useHistory } from "react-router-dom";
 import dogs from "../Images/dogs.jpg";
+import Nav from "./Nav"
+import Footer from "./Footer"
+
+
 const Home = () => {
+
+
+  const history = useHistory()
+
+
   const props = useSpring({
     to: { opacity: 1, marginTop: 10 },
     from: { opacity: 0, marginTop: 0 },
@@ -24,8 +33,17 @@ const Home = () => {
     config: { duration: 3000, delay: 2000 },
   });
 
+  const logout = () =>{
+    localStorage.removeItem('token')
+    history.push('/')
+
+  }
+
+
+
   return (
     <>
+    <Nav/>
       <animated.div style={props}>
         <div>
           <div
@@ -138,6 +156,7 @@ const Home = () => {
           </div>
         </div>
       </animated.div>
+    <Footer/>
     </>
   );
 };

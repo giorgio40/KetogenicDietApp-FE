@@ -8,14 +8,13 @@ import About from "./Components/About";
 import PrivateRoute from "./Components/PrivateRoute";
 import React from "react";
 import Home from "./Components/Home";
-import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
 import { SliderData } from "./Components/SliderData";
 
 function App() {
   return (
+    <>
     <div className="App">
-      <Nav />
       <main>
         <Switch>
           <PrivateRoute exact path="/home" component={Home} />
@@ -32,6 +31,7 @@ function App() {
       </main>
       
     </div>
+   </>
   );
 }
 
