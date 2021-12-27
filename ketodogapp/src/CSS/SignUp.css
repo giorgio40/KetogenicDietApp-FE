@@ -4,25 +4,24 @@
 }
 
 .img-container {
+    background-size:cover;
     background-repeat: no-repeat cover ;
     width: 100%;
-    background-size: cover;
-    height:100vh;
+    height:120vh;
 
 
 }
 
 
-
-h1{
+.title{
+    
     color:#EAEDF2;
     text-align: center;
-    margin-top:3%;
-    font-weight:400px;
-    font-size:2rem;
-    margin-bottom:3%;
-    
-    
+    padding:20px;
+    font-weight:600px;
+    font-size:2.2rem;
+    margin-bottom:15%;
+    font-family:Italiana, serif;
 }
 
 
@@ -30,9 +29,10 @@ h1{
     display:flex column;
     justify-content:center;
     align-items:center;
-    width:15%;
+    width:13%;
     margin-left: auto;
     margin-right:auto;
+    
 
 
 }
@@ -57,7 +57,7 @@ label{
     
 
 
-.button{
+.signup-button{
     border: 0;
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -69,7 +69,7 @@ label{
     opacity: 0.9;
     background: #E6C436;
     border-radius: 15px;
-    margin-left: 1%;
+    margin-bottom:8%;
     
   }
   
@@ -84,5 +84,168 @@ label{
     text-decoration:none;
     text-align:center;
     font-size:1rem;
-    margin-top:1%;
+}
+
+
+/* Media breakpoint 1350 px */
+
+@media (max-width:1350px){
+    .title{
+        font-size:1.8rem
+    }
+    
+    
+   
+    
+    
+    .signup-form{
+        width:15%;
+        margin-bottom:2%;
+      
+        
+    
+    
+    }
+    
+     
+        
+    
+
+
+    
+   
+
+
+
+}
+
+
+@media (max-width:1060px){
+    .title{
+        font-size:1.6rem;
+    }
+
+    
+    
+
+    
+    
+    .signup-form{
+    width:19%;
+     
+        
+    
+    
+    }
+    
+
+        
+    
+    label{
+        color:white;
+        font-family:Italiana;
+        font-weight:bold;
+    }
+    
+     
+        
+    
+    
+   
+        
+      
+
+
+    
+
+}
+
+
+@media (max-width:950px){
+    .title{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:900px) {
+    .title{
+        font-size:1.2rem;
+    }
+}
+
+
+@media (max-width:800px) {
+   .title{
+       font-size:1.2rem;
+   } 
+
+.signup-form{
+    width:24%;
+      
+
+
+}
+
+label{
+    color:white;
+    font-size:1rem !important;
+    font-weight:100;
+
+}
+
+ 
+    
+
+
+.button{
+   
+    padding: 12px 12px;
+    
+  }
+
+ 
+
+
+}
+
+@media (max-width:700px) {
+    .title{
+        font-size:1rem;
+    }
+}
+
+@media(max-width650px) {
+    .title{
+        font-size:.9rem;
+    }
+}
+
+@media (max-width:600px) {
+    .title{
+        font-size:1rem;
+    }
+}
+
+@media (max-width:500px) {
+    .title{
+        font-size:.7rem;
+        font-weight:bold;
+    }
+
+    label{
+        font-size:.6rem !important;
+
+    }
+
+    
+    .signup-form{
+      
+        width:28%;
+   
+        
+    
+    
+    }
+    
+    
 }

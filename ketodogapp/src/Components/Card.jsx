@@ -13,8 +13,8 @@ export default function Card(props) {
         <div className="card-body">
           <p>{props.description} </p>
         </div>
-        <div className="btn">
-          <button>
+        <div className="link-butn-container">
+          <button className="link-button">
             <a href={props.link} target="_blank">
               {props.text}
             </a>

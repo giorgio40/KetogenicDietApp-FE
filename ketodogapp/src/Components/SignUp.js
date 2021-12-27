@@ -47,7 +47,7 @@ function SignUp() {
         console.log(err);
       });
   };
-  const inputChange = (name, value) => {
+  const inputChange = (name, value,evt) => {
     yup
       .reach(SignUpSchema, name)
       .validate(value)
@@ -100,10 +100,10 @@ function SignUp() {
         className="img-container"
         style={{ backgroundImage: `url(${keto})` }}
       >
-        {isLoading ? <div>Signing you up!</div> : ""}
+        {isLoading ? <div>Signing you up!</div> : null}
         <br />
         <br />
-        <h1>
+        <h1 className="title">
           Welcome to Ketogenic Diets For Dog Cancer! Please Sign Up To Access
           Important Resources!
         </h1>
@@ -160,7 +160,7 @@ function SignUp() {
             <br />
             <br />
             <div className="submit">
-              <button className="button" disabled={disabled}>Sign Up</button>
+              <button className="signup-button" disabled={disabled}>Sign Up</button>
             </div>
           </div>
         </form>

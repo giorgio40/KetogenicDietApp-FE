@@ -14,7 +14,9 @@ function Nav() {
 
   return (
     <nav className="nav">
-      <img src={Logo} alt="medical cross" className="logo" />
+      <div className="cross-container">
+        <img src={Logo} alt="medical cross" className="logo" />
+      </div>
       <ul className="nav-links">
         <Link to="/home" style={{ textDecoration: "none" }}>
           <li>Home</li>
@@ -29,12 +31,14 @@ function Nav() {
           <li>About</li>
         </Link>
       </ul>
+    <div className="btn-div">
       <div className="button-div">
         <button className="logout-btn" onClick={handleClick}>
           Logout
         </button>
       </div>
-    </nav>
+    </div>
+  </nav>
   );
 }
 

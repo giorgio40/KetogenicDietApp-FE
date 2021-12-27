@@ -1,26 +1,28 @@
-* {
+*{
   box-sizing: border-box;
   max-width: 100%;
+  margin: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap');
 
 
-.wrapper {
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover; 
-    height: 100vh;
-    font-size: 2rem;
-    margin-top:0 !important;
+.wrapper{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  font-size: 2rem;
+  margin:0 !important;
 }
 
-h2 {
-  margin-top: 5%;
+.h2-login {
   color: #E6C436;
   text-align: center;
   font-weight: 400px;
   font-size: 2.5rem;
   height: 10vh;
+  padding-top:5%;
+  font-family:roboto,sans-serif;
 }
 
 .login-form {
@@ -28,19 +30,16 @@ h2 {
   margin-top: 15%;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 25%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .login-form input {
-  display: flex column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   height: 5vh;
-  width: 92%;
-  margin-top:5%;
+  margin: 3%;
+  width: 90%;
 }
 
 label {
@@ -50,24 +49,24 @@ label {
 
 .button-container {
   display:flex;
-  align-items: center;
-  justify-content: center;
-  width:93%;
+  justify-content:center;
+  align-items:center;
 }
 
 .btn {
   border: 0;
   color: white;
-  font-family: italiana;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   line-height: 2.5;
-  width: 97%;
+  width: 83%;
   font-size: 1rem;
-  padding: 8px 16px;
+  padding: 8px 12px;
   opacity: 0.9;
   background: #E6C436;
   border-radius: 15px;
-  margin-top:12%;
+  margin-left: 1%;
+  margin-top:7%;
 }
 
 button:hover{
@@ -76,11 +75,33 @@ button:hover{
   transition:.2s;
 
 
-
-
-
-
-
-
 }
+
+/* media breakpoint 800px */
+
+
+@media (max-width:800px){
+  
+  .h2-login {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .form-container{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .login-form {
+    width: 35%;
+ 
+  }
+
+  
+  
+  
+  }
 
