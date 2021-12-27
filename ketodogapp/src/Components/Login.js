@@ -13,7 +13,6 @@ function Login() {
     username: "",
     password: "",
   };
-
   const [disabled, setDisabled] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const [formErrors, setFormErrors] = useState(initialFormErrors);
@@ -35,7 +34,6 @@ function Login() {
         }
       )
       .then((res) => {
-        console.log(res.data);
         localStorage.setItem("token", res.data.access_token);
         setIsLoading(true);
         push("/home");
@@ -44,16 +42,19 @@ function Login() {
 
   return (
     <>
-      <div className="background-container" style={{ backgroundImage: `url(${cancer})` }}>
+      <div
+        className="wrapper"
+        style={{ backgroundImage: `url(${cancer})` }}
+      >
         <div>
-          <h2> Please login In.</h2>
+          <h2> Please login In</h2>
         </div>
         <div className="form-container">
           <form onSubmit={postLogin} className="login-form">
-            {isLoading === true ? <div>Loggin you In!</div> : ""}
+            {isLoading === true ? <div>Loggin you In!</div> : null}
 
             <div>{formErrors.username}</div>
-            <div>{formErrors.passwordl}</div>
+            <div>{formErrors.password}</div>
             <label>
               Username:
               <input
@@ -68,7 +69,7 @@ function Login() {
               />
             </label>
             <label>
-              password:
+              Password:
               <input
                 type="password"
                 name="password"
@@ -81,8 +82,8 @@ function Login() {
               />
             </label>
             <br />
-            <div className="button-div">
-              <button disabled={disabled}>Log in</button>
+            <div className="button-container">
+              <button className="btn" disabled={disabled}>Log in</button>
             </div>
           </form>
         </div>

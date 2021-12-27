@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap');
+
+
 .nav{
     display:flex;
     background:#88BB63;
@@ -16,6 +19,7 @@
     align-items:center;
     list-style:none;
     font-size:1.5rem;
+    font-family:'Italiana', serif;
 }    
 
 
@@ -32,4 +36,19 @@
 
 .logo{
     border-radius:50%;
+}
+.button-div{
+    max-width:40%;
+    margin-top:1%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.logout-btn{
+    padding:8px 22px;
+    text-align:center;
+    background:#D7C446;
+    color:white;
+
 }

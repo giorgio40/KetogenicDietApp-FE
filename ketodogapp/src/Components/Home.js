@@ -3,9 +3,18 @@ import { useSpring, animated } from "react-spring";
 import cancer from "../Images/cancerphoto.jpg";
 import "../CSS/home.css";
 import keto from "../Images/ketogenic-diet-for-dogs.jpg";
-import { Link } from "react-router-dom"
+import { Link ,useHistory } from "react-router-dom";
 import dogs from "../Images/dogs.jpg";
+import Nav from "./Nav"
+import Footer from "./Footer"
+
+
 const Home = () => {
+
+
+  const history = useHistory()
+
+
   const props = useSpring({
     to: { opacity: 1, marginTop: 10 },
     from: { opacity: 0, marginTop: 0 },
@@ -19,14 +28,22 @@ const Home = () => {
   });
 
   const props3 = useSpring({
-    to: {opacity: 1, marginRight: 0},
-    from: {opacity : 0 , marginRight:-50},
-    config: { duration: 3000, delay: 2000 }
+    to: { opacity: 1, marginRight: 0 },
+    from: { opacity: 0, marginRight: -50 },
+    config: { duration: 3000, delay: 2000 },
+  });
 
-  })
+  const logout = () =>{
+    localStorage.removeItem('token')
+    history.push('/')
+
+  }
+
+
 
   return (
     <>
+    <Nav/>
       <animated.div style={props}>
         <div>
           <div
@@ -61,7 +78,7 @@ const Home = () => {
       <animated.div style={props2}>
         <div>
           <div style={{ backgroundImage: `url(${keto})` }} className="keto-img">
-            <br/> 
+            <br />
             <h2 className="keto-heading"> What is a Ketogenic Diet?</h2>
             <ul>
               <li>
@@ -86,48 +103,62 @@ const Home = () => {
                 used for epilepsy in children
               </li>
               <li>
-                The researchers saw that when children were on a ketogenic diet and  were <br/> not responsive to anti-seizure medications that there
-                seizures reduced significantly
+                The researchers saw that when children were on a ketogenic diet
+                and were <br /> not responsive to anti-seizure medications that
+                there seizures reduced significantly
               </li>
             </ul>
             <div className="btn-container">
               <Link to="/mealplan">
-              <button type="button" className="button">Click Here to goto Meal Plan </button>
+                <button type="button" className="button">
+                  Click Here to goto Meal Plan{" "}
+                </button>
               </Link>
             </div>
           </div>
         </div>
       </animated.div>
 
-      <animated.div style={props2}>
+      <animated.div style={props3}>
         <div>
           <div style={{ backgroundImage: `url(${dogs})` }} className="keto-img">
-            <br/> 
-            <h2 className="keto-heading"> Why Exercise is Important when you have your dog on a Ketogenic Diet?</h2>
+            <br />
+            <h2 className="keto-heading">
+              {" "}
+              Why Exercise is Important when you have your dog on a Ketogenic
+              Diet?
+            </h2>
             <ul>
-              <li> When KetoPet Sanctuary was around all the dogs in their cancer care where doing METCON which is metabolic conditioning
+              <li>
+                {" "}
+                When KetoPet Sanctuary was around all the dogs in their cancer
+                care where doing METCON which is metabolic conditioning
               </li>
               <li>
-                They were exercised 2 times a day for at least 20 minutes with aerobic exercise
+                They were exercised 2 times a day for at least 20 minutes with
+                aerobic exercise
               </li>
               <li>
-                  Exercising Can help maintain muscle mass. Every dog in the care of KetoPet was treated as if they were bodybuilders and they were exercised and their calories were tightly controlled
+                Exercising Can help maintain muscle mass. Every dog in the care
+                of KetoPet was treated as if they were bodybuilders and they
+                were exercised and their calories were tightly controlled
               </li>
               <li>
-                While on a ketogenic diet, exercise will burn off excessive glucose, putting further stress on the cancer
+                While on a ketogenic diet, exercise will burn off excessive
+                glucose, putting further stress on the cancer
               </li>
               <li>
-                    It is important to exercise your dog daily with aerobic exercise, like fetching, running with your dog for at least 20 minutes twice a day to keep glucose down.
+                It is important to exercise your dog daily with aerobic
+                exercise, like fetching, running with your dog for at least 20
+                minutes twice a day to keep glucose down.
               </li>
-     
             </ul>
           </div>
         </div>
       </animated.div>
+    <Footer/>
     </>
   );
 };
 
 export default Home;
-
-

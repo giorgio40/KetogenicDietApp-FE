@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap');
+
+.slider{
+    position:relative;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:0;
+}
+
+.dog-img{
+    width:800px;
+    height:500px;
+    border-radius:10px;
+}
+
+.right-arrow{
+    position:absolute;
+    top:50%;
+    right:32px;
+    font-size:3rem;
+    color:#000;
+    z-index:10;
+    cursor:pointer;
+    user-select:none;
+}
+
+.left-arrow{
+    position:absolute;
+    top:50%;
+    left:32px;
+    font-size:3rem;
+    color:#000;
+    z-index:10;
+    cursor:pointer;
+    user-select:none;
+} 
+
+.slide{
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide-active{
+    opacity: 1;
+    transition-duration:1s;
+    transform:scale(1.08);
+}
+
+.heading{
+    margin-top: 70px;
+    font-family:'Italiana';
+    font-size:3rem;
+}
+
+.about{
+    text-align:center;
+    font-family:'Italiana', serif;
+    font-weight:500;
+    font-size:1.5rem;
+    margin-bottom:25px;
+}
+
+hr{
+    width:50%;
+    margin-bottom:15px;
+}

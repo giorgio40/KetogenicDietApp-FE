@@ -100,7 +100,7 @@ function SignUp() {
         className="img-container"
         style={{ backgroundImage: `url(${keto})` }}
       >
-        {isLoading === true ? <div>Signing you up!</div> : ""}
+        {isLoading ? <div>Signing you up!</div> : ""}
         <br />
         <br />
         <h1>
@@ -159,8 +159,8 @@ function SignUp() {
             <br />
             <br />
             <br />
-            <div id="submit">
-              <button disabled={disabled}>Sign Up</button>
+            <div className="submit">
+              <button className="button" disabled={disabled}>Sign Up</button>
             </div>
           </div>
         </form>

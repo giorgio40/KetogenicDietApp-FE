@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&family=Roboto&display=swap');
+
+
+.mealplan-wrapper{
+    height:100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; 
+    height: 100vh;
+    font-size: 2rem;
+}
+
+
+
+
+.meal-plan-heading{
+    text-align: center;
+    font-weight:bold;
+    font-family:roboto;
+    font-size:3rem;
+    color:#DCC540;
+}
+
+.meal-plan-paragraph{
+    color:beige;
+    text-align:center;
+    margin-top:5%;
+    font-weight:bold;
+}
+
+.form-weight{
+    text-align: center;
+    margin-top:3%;
+    font-family:Italiana;
+    font-size:2rem;
+}
+
+.form-weight select{
+    margin:1.5%;
+    font-size:1.3rem;
+
+}
+
+
+.form-weight input{
+    font-size:1.3rem;
+    font-family:Italiana;
+    background-color:#DCC540;
+    padding:12px 35px;
+    
+}
+.form-weight input:hover{
+    transform:scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+    transition:.2s;
+    background-color:#303030;
+    color:white;
+}
+.form-weight label{
+    color:beige;
+    font-family:roboto;
+}
+
+/* media breakpoint 1200px */
+
+@media screen and (min-width:1200px){
+    
+
+
+
+   
+ 
+   
+    }
+
+        
+
+
+    
+    
+    
+
+    
+    
+    
+
+
