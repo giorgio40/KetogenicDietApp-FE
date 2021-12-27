@@ -63,7 +63,40 @@
     margin-bottom:25px;
 }
 
-hr{
-    width:50%;
+.horizontal-rule{
     margin-bottom:15px;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    
+    
+}
+
+
+@media (max-width:1300px){
+ 
+    
+    .heading{
+       
+        color:#DCCD68;
+        text-align: center;
+        margin-bottom:5%;
+    }
+    
+    .about{
+      margin-top:5%;
+        
+    }
+ 
+}
+
+@media (max-width:800px){
+    .about{
+        font-size:1.1rem;
+    }
+
+
+    .dog-img{
+        max-width:500px;
+    }
 }

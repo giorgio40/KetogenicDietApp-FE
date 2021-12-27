@@ -63,9 +63,11 @@
 
 /* media breakpoint 1200px */
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:800px){
     
-
+.meal-plan-paragraph{
+    font-size:1.2rem;
+}
 
 
    

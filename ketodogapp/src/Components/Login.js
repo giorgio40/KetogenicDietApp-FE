@@ -46,8 +46,8 @@ function Login() {
         className="wrapper"
         style={{ backgroundImage: `url(${cancer})` }}
       >
-        <div>
-          <h2> Please login In</h2>
+        <div className="h2-container">
+          <h2 className="h2-login"> Please log In</h2>
         </div>
         <div className="form-container">
           <form onSubmit={postLogin} className="login-form">

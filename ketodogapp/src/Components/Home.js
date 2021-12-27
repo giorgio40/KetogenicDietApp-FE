@@ -45,27 +45,27 @@ const Home = () => {
     <>
     <Nav/>
       <animated.div style={props}>
-        <div>
+        <div className="div">
           <div
             style={{ backgroundImage: `url(${cancer})` }}
             className="container-img"
           >
             <h2 className="cancer-heading"> What is Cancer?</h2>
 
-            <p className="paragraph">
+            <p className="paragraph1">
               The dogmatic view of cancer has been around for a long time. This
               view is called the Somatic Mutation Theory. This Theory is
               believed that cancer arises from damaged DNA in the cells that
               causes out of control cell growth.
             </p>
-            <p className="paragraph">
+            <p className="paragraph2">
               New Evidence shows that Cancer is caused by the damage to the
               mitochondria causing the cells to fall back on ancient pathways of
               fermentation. Cancer cells ferment Glucose and/or Glutamine for
               energy or ATP.
             </p>
 
-            <p className="paragraph">
+            <p className="paragraph3">
               If Cancer is a genetic disease, then why when they did a scientic
               experiment in the 1960's where they took the mitochondria of a
               cancer cell and put it in a normal cell the cell turned cancerous.
@@ -80,6 +80,7 @@ const Home = () => {
           <div style={{ backgroundImage: `url(${keto})` }} className="keto-img">
             <br />
             <h2 className="keto-heading"> What is a Ketogenic Diet?</h2>
+          <div className="ul-container">
             <ul>
               <li>
                 A ketogenic diet is a High Fat, moderate protein, low
@@ -108,9 +109,10 @@ const Home = () => {
                 there seizures reduced significantly
               </li>
             </ul>
-            <div className="btn-container">
+          </div>
+            <div className="mealplan-btn-container">
               <Link to="/mealplan">
-                <button type="button" className="button">
+                <button  className="mealplan-button">
                   Click Here to goto Meal Plan{" "}
                 </button>
               </Link>
@@ -119,16 +121,19 @@ const Home = () => {
         </div>
       </animated.div>
 
+      <br/>
+      <br/>
+
       <animated.div style={props3}>
         <div>
-          <div style={{ backgroundImage: `url(${dogs})` }} className="keto-img">
+          <div style={{ backgroundImage: `url(${dogs})` }} className="dogs">
             <br />
-            <h2 className="keto-heading">
+            <h2 className="keto-headin">
               {" "}
               Why Exercise is Important when you have your dog on a Ketogenic
               Diet?
             </h2>
-            <ul>
+            <ul className="unordered-list">
               <li>
                 {" "}
                 When KetoPet Sanctuary was around all the dogs in their cancer

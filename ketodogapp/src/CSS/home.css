@@ -1,3 +1,6 @@
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap');
 
 
@@ -16,15 +19,33 @@
   font-size: 3rem;
   color:#A42FF9;
   font-weight:bold;
+  text-align:center;
 }
 
-.paragraph{
+.paragraph1{
+  font: size 1.5rem;
+  text-align:center;
+  margin-top:3%;
+  color:#ffffcc;
+  font-weight:400px;
+  margin-bottom:5%;
+}
+.paragraph2{
+  font: size 1.5rem;
+  text-align:center;
+  color:#ffffcc;
+  font-weight:400px;
+  margin-bottom:5%;
+}
+.paragraph3{
   font: size 1.5rem;
   text-align:center;
   margin-top:3%;
   color:#ffffcc;
   font-weight:400px;
 }
+
+
 
 .keto-heading{
   font-size: 2.5rem;
@@ -39,7 +60,7 @@
   margin-top:5%;
 }
 
-ul li{
+.ul-container li{
   font-size:1.5rem;
   color:#c9c0bb;
   margin-top:3%;
@@ -49,20 +70,162 @@ ul li{
   text-align:center;
   font-family: 'Italiana', serif;
 }
-.btn-container{
+.mealplan-btn-container{
   display:flex;
   justify-content:center;
   align-items:center;
   width:100%;
   margin-top:5%;
-  margin-left:17%;
+  height:20vh;
   
 }
-.button{
-  width:10px 15px 15px 10px;
+  .mealplan-button{
+  width:50px 30px;
+  text-align:center;
+  border-radius:15px;
+  background:#FF6501;
+
+  
+}
+
+
+@media (max-width:1200px) {
+
+
+.paragraph1{
+  margin:4%;
+}
+
+
+
+
+.keto-heading{
+  font-size: 2.5rem;
+  color:#E8D1DD;
+  
+}
+
+.keto-img{
+  background-repeat: no-repeat cover;
+  background-size: cover;
+  height: 110vh;
+  margin-top:5%;
+}
+
+.ul-container li{
+  font-size:1.4rem;
+  color:#c9c0bb;
+  margin-top:3%;
+  font-weight:bold;
+  text-align:center;
+  font-family: 'Italiana', serif;
+  padding:20px;
+  
+}
+.mealplan-btn-container{
+  display:flex;
+  justify-content:flex-end;
+  width:100%;
+  height:10vh;
+  
+  
+  
+}
+.mealplan-button{
   background:#FF6501;
   text-align:center;
-  margin-top:5%;
+  padding:40px 30px;
+  color:white;
   border-radius:15px;
   
 }
+
+}
+
+@media (max-width:800px) {
+
+  .container-img{
+    height:70vh;
+  }
+
+
+  .cancer-heading{
+    font-size:2rem;
+    
+  }
+
+
+  .paragraph1{
+    margin-top:10%;
+    font-size:1.1rem;
+    font-family:roboto;
+  }
+   .paragraph2{
+    font-size:1.1rem;
+    margin-top:10%;
+    font-family:roboto;
+  }
+  .paragraph3{
+    font-size:1.1rem;
+    font-family:roboto;
+    margin-top:10%;
+  }
+  .keto-img{
+    height:100vh;
+    
+  }
+  
+  
+  .keto-heading{
+    font-size: 1.5rem;
+    color:#E8D1DD;
+    text-align:center;
+    font-family: Italiana;
+    
+  }
+  
+  .keto-headin{
+    text-align:center;
+    font-family:Italiana;
+    font-size: 1.5rem;
+    font-weight:bold;
+    color:grey;
+  }
+  
+  .ul-container li{
+    font-size:1.1rem;
+ 
+    
+  }
+  .mealplan-btn-container{
+    display:flex;
+    justify-content:flex-end;
+    height:10vh;
+    position:relative;
+    top:1%;
+    bottom:3%;
+  
+    
+    
+    
+  }
+  .mealplan-button{
+    background:#832652;
+    padding:20px 30px;
+    
+  }
+  .unordered-list{
+    margin-top:5%;
+  } 
+   .unordered-list li{
+    font-size:1.3rem;
+    margin:8%;
+    font-family: Roboto;
+    color:white;
+  }
+  }
+
+
+
+  
+  

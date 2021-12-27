@@ -24,7 +24,9 @@ function About(props) {
     <>
     <Nav/>
       <h2 className="heading">In Loving Memory of Marley</h2>
-      <hr />
+      <div className="horizontal-rule">
+        <hr/>
+      </div>
       <section className="slider">
         <FaArrowAltCircleLeft onClick={prevSlide} className="left-arrow" />
         <FaArrowAltCircleRight onClick={nextSlide} className="right-arrow" />
@@ -41,7 +43,9 @@ function About(props) {
           );
         })}
       </section>
-      <hr />
+      <div className="horizontal-rule">
+          <hr />
+      </div>
       <p className="about">
         This site was made in Memory of my heart Dog, Marley. Marley was
         diagnosed in May of 2017 with Lymphoma. She was immediately put on a raw
