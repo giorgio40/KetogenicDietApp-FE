@@ -6,17 +6,17 @@ function Footer() {
       <section className="footer-right">
         <div className="links">Important Links</div>
         <div>
-          <a href="http://vhavets.com" target="_blank">
+          <a href="http://vhavets.com">
             Veterinary HealthCare Associates
           </a>
         </div>
         <div>
-          <a href="http://longlivingpets.com" target="_blank">
+          <a href="http://longlivingpets.com">
             LongLivingPets
           </a>
         </div>
         <div>
-          <a href="http://ketopoweredk9.com" target="_blank">
+          <a href="http://ketopoweredk9.com">
             KetoPoweredK9
           </a>
         </div>
@@ -36,7 +36,7 @@ function Footer() {
           Contact
           <br />
           <br />
-          <a href="mailto: georgehatzigeorgio@gmail.com" target="_blank">
+          <a href="mailto: georgehatzigeorgio@gmail.com">
             {" "}
             Send Email{" "}
           </a>{" "}

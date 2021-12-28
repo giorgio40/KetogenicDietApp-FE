@@ -8,7 +8,6 @@ import About from "./Components/About";
 import PrivateRoute from "./Components/PrivateRoute";
 import React from "react";
 import Home from "./Components/Home";
-import Footer from "./Components/Footer";
 import { SliderData } from "./Components/SliderData";
 
 function App() {
