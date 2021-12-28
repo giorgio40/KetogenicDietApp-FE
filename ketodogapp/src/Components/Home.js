@@ -3,7 +3,7 @@ import { useSpring, animated } from "react-spring";
 import cancer from "../Images/cancerphoto.jpg";
 import "../CSS/home.css";
 import keto from "../Images/ketogenic-diet-for-dogs.jpg";
-import { Link ,useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import dogs from "../Images/dogs.jpg";
 import Nav from "./Nav"
 import Footer from "./Footer"
@@ -12,7 +12,6 @@ import Footer from "./Footer"
 const Home = () => {
 
 
-  const history = useHistory()
 
 
   const props = useSpring({
