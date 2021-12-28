@@ -33,11 +33,6 @@ const Home = () => {
     config: { duration: 3000, delay: 2000 },
   });
 
-  const logout = () =>{
-    localStorage.removeItem('token')
-    history.push('/')
-
-  }
 
 
 
