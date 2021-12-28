@@ -14,24 +14,23 @@ import { SliderData } from "./Components/SliderData";
 function App() {
   return (
     <>
-    <div className="App">
-      <main>
-        <Switch>
-          <PrivateRoute exact path="/home" component={Home} />
-          <PrivateRoute path="/resources" component={Resources} />
-          <PrivateRoute
-            path="/about"
-            render={(props) => <About {...props} slides={SliderData} />}
-          />
-          <PrivateRoute path="/mealplan" component={MealPlan} />
-        </Switch>
+      <div className="App">
+        <main>
+          <Switch>
+            <PrivateRoute exact path="/home" component={Home} />
+            <PrivateRoute path="/resources" component={Resources} />
+            <PrivateRoute
+              path="/about"
+              render={(props) => <About {...props} slides={SliderData} />}
+            />
+            <PrivateRoute path="/mealplan" component={MealPlan} />
+          </Switch>
 
-        <Route exact path="/" component={SignUp} />
-        <Route path="/login" component={Login} />
-      </main>
-      
-    </div>
-   </>
+          <Route exact path="/" component={SignUp} />
+          <Route path="/login" component={Login} />
+        </main>
+      </div>
+    </>
   );
 }
 

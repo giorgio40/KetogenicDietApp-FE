@@ -1,28 +1,27 @@
-*{
+* {
   box-sizing: border-box;
   max-width: 100%;
   margin: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap");
 
-
-.wrapper{
+.wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
   font-size: 2rem;
-  margin:0 !important;
+  margin: 0 !important;
 }
 
 .h2-login {
-  color: #E6C436;
+  color: #e6c436;
   text-align: center;
   font-weight: 400px;
   font-size: 2.5rem;
   height: 10vh;
-  padding-top:5%;
-  font-family:roboto,sans-serif;
+  padding-top: 5%;
+  font-family: roboto, sans-serif;
 }
 
 .login-form {
@@ -44,13 +43,13 @@
 
 label {
   color: white;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 .button-container {
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -63,45 +62,33 @@ label {
   font-size: 1rem;
   padding: 8px 12px;
   opacity: 0.9;
-  background: #E6C436;
+  background: #e6c436;
   border-radius: 15px;
   margin-left: 1%;
-  margin-top:7%;
+  margin-top: 7%;
 }
 
-button:hover{
-  transform:scale(1.1);
+button:hover {
+  transform: scale(1.1);
   box-shadow: 0px 0px 15px 0px;
-  transition:.2s;
-
-
+  transition: 0.2s;
 }
 
 /* media breakpoint 800px */
 
-
-@media (max-width:800px){
-  
+@media (max-width: 800px) {
   .h2-login {
     font-size: 2rem;
     font-weight: bold;
   }
-  
-  .form-container{
-    
-    display:flex;
+
+  .form-container {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  
+
   .login-form {
     width: 35%;
- 
   }
-
-  
-  
-  
-  }
-
+}

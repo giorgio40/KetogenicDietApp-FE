@@ -1,231 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap");
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap');
-
-
-
-.container-img{
+.container-img {
   background-repeat: no-repeat cover;
   background-size: cover;
   height: 80vh;
-  margin-top:3%;
+  margin-top: 3%;
   font-size: 2rem;
 }
 
-
-
-.cancer-heading{
+.cancer-heading {
   font-size: 3rem;
-  color:#A42FF9;
-  font-weight:bold;
-  text-align:center;
+  color: #a42ff9;
+  font-weight: bold;
+  text-align: center;
 }
 
-.paragraph1{
+.paragraph1 {
   font: size 1.5rem;
-  text-align:center;
-  margin-top:3%;
-  color:#ffffcc;
-  font-weight:400px;
-  margin-bottom:5%;
+  text-align: center;
+  margin-top: 3%;
+  color: #ffffcc;
+  font-weight: 400px;
+  margin-bottom: 5%;
 }
-.paragraph2{
+.paragraph2 {
   font: size 1.5rem;
-  text-align:center;
-  color:#ffffcc;
-  font-weight:400px;
-  margin-bottom:5%;
+  text-align: center;
+  color: #ffffcc;
+  font-weight: 400px;
+  margin-bottom: 5%;
 }
-.paragraph3{
+.paragraph3 {
   font: size 1.5rem;
-  text-align:center;
-  margin-top:3%;
-  color:#ffffcc;
-  font-weight:400px;
+  text-align: center;
+  margin-top: 3%;
+  color: #ffffcc;
+  font-weight: 400px;
 }
 
-
-
-.keto-heading{
+.keto-heading {
   font-size: 2.5rem;
-  color:#E8D1DD;
-  
+  color: #e8d1dd;
 }
 
-.keto-img{
+.keto-img {
   background-repeat: no-repeat cover;
   background-size: cover;
   height: 110vh;
-  margin-top:5%;
+  margin-top: 5%;
 }
 
-.ul-container li{
-  font-size:1.5rem;
-  color:#c9c0bb;
-  margin-top:3%;
-  margin-left:4%;
-  margin-right:auto;
-  font-weight:bold;
-  text-align:center;
-  font-family: 'Italiana', serif;
+.ul-container li {
+  font-size: 1.5rem;
+  color: #c9c0bb;
+  margin-top: 3%;
+  margin-left: 4%;
+  margin-right: auto;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Italiana", serif;
 }
-.mealplan-btn-container{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:100%;
-  margin-top:5%;
-  height:20vh;
-  
+.mealplan-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+  height: 20vh;
 }
-  .mealplan-button{
-  width:50px 30px;
-  text-align:center;
-  border-radius:15px;
-  background:#FF6501;
-
-  
+.mealplan-button {
+  width: 50px 30px;
+  text-align: center;
+  border-radius: 15px;
+  background: #ff6501;
 }
 
-
-@media (max-width:1200px) {
-
-
-.paragraph1{
-  margin:4%;
-}
-
-
-
-
-.keto-heading{
-  font-size: 2.5rem;
-  color:#E8D1DD;
-  
-}
-
-.keto-img{
-  background-repeat: no-repeat cover;
-  background-size: cover;
-  height: 110vh;
-  margin-top:5%;
-}
-
-.ul-container li{
-  font-size:1.4rem;
-  color:#c9c0bb;
-  margin-top:3%;
-  font-weight:bold;
-  text-align:center;
-  font-family: 'Italiana', serif;
-  padding:20px;
-  
-}
-.mealplan-btn-container{
-  display:flex;
-  justify-content:flex-end;
-  width:100%;
-  height:10vh;
-  
-  
-  
-}
-.mealplan-button{
-  background:#FF6501;
-  text-align:center;
-  padding:40px 30px;
-  color:white;
-  border-radius:15px;
-  
-}
-
-}
-
-@media (max-width:800px) {
-
-  .container-img{
-    height:70vh;
+@media (max-width: 1200px) {
+  .paragraph1 {
+    margin: 4%;
   }
 
-
-  .cancer-heading{
-    font-size:2rem;
-    
+  .keto-heading {
+    font-size: 2.5rem;
+    color: #e8d1dd;
   }
 
+  .keto-img {
+    background-repeat: no-repeat cover;
+    background-size: cover;
+    height: 110vh;
+    margin-top: 5%;
+  }
 
-  .paragraph1{
-    margin-top:10%;
-    font-size:1.1rem;
-    font-family:roboto;
+  .ul-container li {
+    font-size: 1.4rem;
+    color: #c9c0bb;
+    margin-top: 3%;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Italiana", serif;
+    padding: 20px;
   }
-   .paragraph2{
-    font-size:1.1rem;
-    margin-top:10%;
-    font-family:roboto;
+  .mealplan-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10vh;
   }
-  .paragraph3{
-    font-size:1.1rem;
-    font-family:roboto;
-    margin-top:10%;
+  .mealplan-button {
+    background: #ff6501;
+    text-align: center;
+    padding: 40px 30px;
+    color: white;
+    border-radius: 15px;
   }
-  .keto-img{
-    height:100vh;
-    
+}
+
+@media (max-width: 800px) {
+  .container-img {
+    height: 70vh;
   }
-  
-  
-  .keto-heading{
+
+  .cancer-heading {
+    font-size: 2rem;
+  }
+
+  .paragraph1 {
+    margin-top: 10%;
+    font-size: 1.1rem;
+    font-family: roboto;
+  }
+  .paragraph2 {
+    font-size: 1.1rem;
+    margin-top: 10%;
+    font-family: roboto;
+  }
+  .paragraph3 {
+    font-size: 1.1rem;
+    font-family: roboto;
+    margin-top: 10%;
+  }
+  .keto-img {
+    height: 100vh;
+  }
+
+  .keto-heading {
     font-size: 1.5rem;
-    color:#E8D1DD;
-    text-align:center;
+    color: #e8d1dd;
+    text-align: center;
     font-family: Italiana;
-    
   }
-  
-  .keto-headin{
-    text-align:center;
-    font-family:Italiana;
+
+  .keto-headin {
+    text-align: center;
+    font-family: Italiana;
     font-size: 1.5rem;
-    font-weight:bold;
-    color:grey;
+    font-weight: bold;
+    color: grey;
   }
-  
-  .ul-container li{
-    font-size:1.1rem;
- 
-    
+
+  .ul-container li {
+    font-size: 1.1rem;
   }
-  .mealplan-btn-container{
-    display:flex;
-    justify-content:flex-end;
-    height:10vh;
-    position:relative;
-    top:1%;
-    bottom:3%;
-  
-    
-    
-    
+  .mealplan-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+    position: relative;
+    top: 1%;
+    bottom: 3%;
   }
-  .mealplan-button{
-    background:#832652;
-    padding:20px 30px;
-    
+  .mealplan-button {
+    background: #832652;
+    padding: 20px 30px;
   }
-  .unordered-list{
-    margin-top:5%;
-  } 
-   .unordered-list li{
-    font-size:1.1rem;
-    margin:8%;
+  .unordered-list {
+    margin-top: 5%;
+  }
+  .unordered-list li {
+    font-size: 1.1rem;
+    margin: 8%;
     font-family: Roboto;
-    color:white;
+    color: white;
   }
-  }
-
-
-
-  
-  
+}

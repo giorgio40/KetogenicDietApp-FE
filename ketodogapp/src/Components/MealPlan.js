@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { axiosAuth } from "../Axios/axiosAuth";
-import MealPlanData from "../Components/MealPlanData"
-import mealplanimage from "../Images/mealplanimage.png"
-import "../CSS/mealplan.css"
-import Nav from "./Nav"
-import Footer from "./Footer"
-
+import MealPlanData from "../Components/MealPlanData";
+import mealplanimage from "../Images/mealplanimage.png";
+import "../CSS/mealplan.css";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 function MealPlan() {
   const [formState, setFormState] = useState({
@@ -32,10 +31,10 @@ function MealPlan() {
   };
   return (
     <>
-    <Nav/>
+      <Nav />
       <div
         className="mealplan-wrapper"
-         style={{ backgroundImage: `url(${mealplanimage})` }}
+        style={{ backgroundImage: `url(${mealplanimage})` }}
       >
         <h3 className="meal-plan-heading">Meal Plans</h3>
         <div>
@@ -59,7 +58,7 @@ function MealPlan() {
             never had a problem.
           </p>
         </div>
-        <form  className="form-weight" onSubmit={handleSubmit}>
+        <form className="form-weight" onSubmit={handleSubmit}>
           <label htmlFor="weight">
             Please Select your dog's weight:
             <select
@@ -83,8 +82,8 @@ function MealPlan() {
           <input type="submit" value="Submit" />
         </form>
       </div>
-      <MealPlanData data={data}/>
-    <Footer />
+      <MealPlanData data={data} />
+      <Footer />
     </>
   );
 }

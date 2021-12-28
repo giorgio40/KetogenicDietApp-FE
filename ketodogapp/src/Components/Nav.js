@@ -31,14 +31,14 @@ function Nav() {
           <li>About</li>
         </Link>
       </ul>
-    <div className="btn-div">
-      <div className="button-div">
-        <button className="logout-btn" onClick={handleClick}>
-          Logout
-        </button>
+      <div className="btn-div">
+        <div className="button-div">
+          <button className="logout-btn" onClick={handleClick}>
+            Logout
+          </button>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   );
 }
 
