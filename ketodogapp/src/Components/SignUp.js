@@ -47,7 +47,7 @@ function SignUp() {
         console.log(err);
       });
   };
-  const inputChange = (name, value,evt) => {
+  const inputChange = (name, value, evt) => {
     yup
       .reach(SignUpSchema, name)
       .validate(value)
@@ -160,7 +160,9 @@ function SignUp() {
             <br />
             <br />
             <div className="submit">
-              <button className="signup-button" disabled={disabled}>Sign Up</button>
+              <button className="signup-button" disabled={disabled}>
+                Sign Up
+              </button>
             </div>
           </div>
         </form>

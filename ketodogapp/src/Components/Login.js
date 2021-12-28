@@ -42,10 +42,7 @@ function Login() {
 
   return (
     <>
-      <div
-        className="wrapper"
-        style={{ backgroundImage: `url(${cancer})` }}
-      >
+      <div className="wrapper" style={{ backgroundImage: `url(${cancer})` }}>
         <div className="h2-container">
           <h2 className="h2-login"> Please log In</h2>
         </div>
@@ -83,7 +80,9 @@ function Login() {
             </label>
             <br />
             <div className="button-container">
-              <button className="btn" disabled={disabled}>Log in</button>
+              <button className="btn" disabled={disabled}>
+                Log in
+              </button>
             </div>
           </form>
         </div>

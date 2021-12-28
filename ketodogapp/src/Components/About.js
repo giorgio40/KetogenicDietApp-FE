@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { SliderData } from "../Components/SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "../CSS/About.css";
-import Nav from "./Nav"
-import Footer from "./Footer"
+import Nav from "./Nav";
+import Footer from "./Footer";
 function About(props) {
   const { slides } = props;
 
@@ -22,10 +22,10 @@ function About(props) {
   };
   return (
     <>
-    <Nav/>
+      <Nav />
       <h2 className="heading">In Loving Memory of Marley</h2>
       <div className="horizontal-rule">
-        <hr/>
+        <hr />
       </div>
       <section className="slider">
         <FaArrowAltCircleLeft onClick={prevSlide} className="left-arrow" />
@@ -44,7 +44,7 @@ function About(props) {
         })}
       </section>
       <div className="horizontal-rule">
-          <hr />
+        <hr />
       </div>
       <p className="about">
         This site was made in Memory of my heart Dog, Marley. Marley was
@@ -61,7 +61,7 @@ function About(props) {
         <br />
         at a Licensed Veterinary Hospital.
       </p>
-    <Footer/>
+      <Footer />
     </>
   );
 }
