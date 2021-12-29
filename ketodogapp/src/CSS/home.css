@@ -75,7 +75,7 @@
   background: #ff6501;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .paragraph1 {
     margin: 4%;
   }
@@ -116,7 +116,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .container-img {
     height: 70vh;
   }
@@ -184,3 +184,4 @@
     color: white;
   }
 }
+

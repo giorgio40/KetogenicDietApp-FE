@@ -48,7 +48,7 @@ function Login() {
     <>
       <div className="wrapper" style={{ backgroundImage: `url(${cancer})` }}>
         <div className="h2-container">
-          <h2 className="h2-login"> Please log In</h2>
+          <h2 className="h2-login"> PLEASE LOG IN</h2>
         </div>
         <div className="form-container">
           <form onSubmit={postLogin} className="login-form">
@@ -56,7 +56,7 @@ function Login() {
 
             <div>{formErrors.username}</div>
             <div>{formErrors.password}</div>
-            <label>
+            <label className="login-label">
               Username:
               <input
                 type="text"
@@ -69,7 +69,7 @@ function Login() {
                 placeholder="username"
               />
             </label>
-            <label>
+            <label className="login-label">
               Password:
               <input
                 type="password"
@@ -84,7 +84,7 @@ function Login() {
             </label>
             <br />
             <div className="button-container">
-              <button className="btn" disabled={disabled}>
+              <button className="buttn" disabled={disabled}>
                 Log in
               </button>
             </div>

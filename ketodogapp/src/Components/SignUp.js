@@ -104,8 +104,7 @@ function SignUp() {
         <br />
         <br />
         <h1 className="title">
-          Welcome to Ketogenic Diets For Dog Cancer! Please Sign Up To Access
-          Important Resources!
+          Welcome to Ketogenic Diets For Dog Cancer! Please Sign Up To Access Important Resources!
         </h1>
         <form onSubmit={onSubmit} className="signup-form">
           <div>
@@ -116,7 +115,7 @@ function SignUp() {
             </em>
           </div>
           <div>
-            <label>
+            <label className="signup-label">
               Username:
               <input
                 type="text"
@@ -131,7 +130,7 @@ function SignUp() {
             <br />
             <br />
 
-            <label>
+            <label className="signup-label">
               Password:
               <input
                 type="password"
@@ -145,7 +144,7 @@ function SignUp() {
             <br />
             <br />
             <br />
-            <label>
+            <label className="signup-label">
               Email:
               <input
                 type="email"

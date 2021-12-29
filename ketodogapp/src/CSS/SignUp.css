@@ -11,10 +11,10 @@
 }
 
 .title {
-  color: #eaedf2;
+  color:grey;
   text-align: center;
   padding: 20px;
-  font-weight: 600px;
+  font-weight: bold;
   font-size: 2.2rem;
   margin-bottom: 15%;
   font-family: Italiana, serif;
@@ -69,55 +69,13 @@ button:hover {
   font-size: 1rem;
 }
 
-/* Media breakpoint 1350 px */
 
-@media (max-width: 1350px) {
+@media (min-width: 1200px) {
   .title {
-    font-size: 1.8rem;
+    font-size: 2.3rem !important;
   }
 
-  .signup-form {
-    width: 15%;
-    margin-bottom: 2%;
-  }
-}
 
-@media (max-width: 1060px) {
-  .title {
-    font-size: 1.6rem;
-  }
-
-  .signup-form {
-    width: 19%;
-  }
-
-  label {
-    color: white;
-    font-family: Italiana;
-    font-weight: bold;
-  }
-}
-
-@media (max-width: 950px) {
-  .title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .title {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .title {
-    font-size: 1.2rem;
-  }
-
-  .signup-form {
-    width: 24%;
-  }
 
   label {
     color: white;
@@ -130,27 +88,67 @@ button:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media (min-width: 900px) {
+
+
+  
   .title {
-    font-size: 1rem;
+ 
+    font-size: 1.8rem !important;
+  }
+  
+  .signup-form {
+  width:25% !important;
+  }
+  
+
+  
+  .signup-label {
+    font-size:1rem !important;
+  }
+  
+  
+  .link {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem !important;
   }
 }
 
-@media (max-width650px) {
+
+
+@media (min-width: 600px) {
   .title {
-    font-size: 0.9rem;
+    font-size: .8rem;
+
+  }
+  
+  .img-container {
+  
+    height: 105vh;
+  }
+
+  
+  .signup-form {
+    width: 35%;
+  }
+  
+  label {
+    font-size: .6rem !important;
+    font-weight: 100;
+  }
+
+  
+  .link {
+    font-size: .7rem;
   }
 }
+  
+ 
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .title {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .title {
-    font-size: 0.7rem;
+    font-size: .8rem;
     font-weight: bold;
   }
 
@@ -159,6 +157,8 @@ button:hover {
   }
 
   .signup-form {
-    width: 28%;
+    width: 30%;
   }
 }
+
+
