@@ -72,196 +72,160 @@
   width: 50px 30px;
   text-align: center;
   border-radius: 15px;
-  background: #ff6501;
+  background:#9E507B;
 }
 
-@media (min-width:1800px) {
 
-}
 
 @media (min-width: 1200px) {
-  .paragraph1 {
-    margin: 4%;
-  }
 
+  
+  
+  .paragraph1 {
+    font: size 1.6rem;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .paragraph2 {
+    font: size 1.6rem;
+  
+  }
+  .paragraph3 {
+    font: size 1.6rem;
+
+  }
+  
   .keto-heading {
     font-size: 2.5rem;
     color: #e8d1dd;
   }
+  
+  .dogs{
+    height:120vh;
+    background-repeat:no-repeat cover;
+    background-size: cover;
+    outline:5px solid red;
+    
+  }
 
+  .unordered-list li {
+    font-size:1.6rem !important;
+  }
   .keto-img {
     background-repeat: no-repeat cover;
     background-size: cover;
-    height: 110vh;
+    height: 100vh;
     margin-top: 5%;
   }
+  
+  
 
-  .ul-list-item {
-    font-size: 1.4rem;
-    color: #c9c0bb;
-    margin-top: 3%;
-    font-weight: bold;
-    text-align: center;
-    font-family: "Italiana", serif;
-    padding: 20px;
-  }
-  .mealplan-btn-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 10vh;
-  }
   .mealplan-button {
-    background: #ff6501;
+    margin-right:5%;
     text-align: center;
-    padding: 40px 30px;
-    color: white;
     border-radius: 15px;
   }
 }
 
 @media (min-width: 900px) {
   .container-img {
-    height: 70vh;
+    height: 80vh;
   }
 
   .cancer-heading {
-    font-size: 2rem;
+    font-size: 2.3rem  !important;
   }
 
-  .paragraph1 {
-    margin-top: 10%;
-    font-size: 1.1rem;
-    font-family: roboto;
-  }
-  .paragraph2 {
-    font-size: 1.1rem;
-    margin-top: 10%;
-    font-family: roboto;
-  }
-  .paragraph3 {
-    font-size: 1.1rem;
-    font-family: roboto;
-    margin-top: 10%;
-  }
+ 
   .keto-img {
     height: 100vh;
   }
 
   .keto-heading {
-    font-size: 1.5rem;
-    color: #e8d1dd;
-    text-align: center;
+    font-size: 2.3rem !important;
+    font-weight:bold;
     font-family: Italiana;
   }
 
   .keto-headin {
     text-align: center;
     font-family: Italiana;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     font-weight: bold;
     color: grey;
   }
 
   .ul-list-item {
-    font-size: 1.1rem;
+    font-size: 1.2rem !important;
   }
-  .mealplan-btn-container {
-    display: flex;
-    justify-content: flex-end;
-    height: 10vh;
-    position: relative;
-    top: 1%;
-    bottom: 3%;
-  }
+
   .mealplan-button {
-    background: #832652;
-    padding: 20px 30px;
-  }
+    margin-right:8%;
+    }
   .unordered-list {
     margin-top: 5%;
   }
+.dogs{
+  height:90vh;
+  margin-bottom:5%;
+}
+
   .unordered-list li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 8%;
-    font-family: Roboto;
     color: white;
+    text-align: center;
   }
 }
   @media (min-width: 600px){
-    .container-img {
-      background-repeat: no-repeat cover;
-      background-size: cover;
-      height: 80vh;
-      margin-top: 3%;
-      font-size: 2rem;
-    }
+
     
     .cancer-heading {
-      font-size: 3rem;
-      color: #a42ff9;
-      font-weight: bold;
-      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 5%;
+  
     }
     
     .paragraph1 {
-      font: size 1.5rem;
-      text-align: center;
-      margin-top: 3%;
-      color: #ffffcc;
-      font-weight: 400px;
-      margin-bottom: 5%;
+      font-size: 1.4rem;
+      font-weight:500px;
+      margin-bottom:10%;
     }
     .paragraph2 {
-      font: size 1.5rem;
-      text-align: center;
-      color: #ffffcc;
-      font-weight: 400px;
-      margin-bottom: 5%;
+      font-size: 1.4rem;
+      font-weight: 500px;
+      margin-bottom:10%;
     }
     .paragraph3 {
-      font: size 1.5rem;
+      font-size: 1.4rem;
       text-align: center;
-      margin-top: 3%;
-      color: #ffffcc;
-      font-weight: 400px;
+      font-weight: 500px;
+      margin-bottom:10%;
     }
     
     .keto-heading {
-      font-size: 2.5rem;
-      color: #e8d1dd;
+      font-size: 1.8rem;
+      text-align: center;
     }
     
     .keto-img {
-      background-repeat: no-repeat cover;
-      background-size: cover;
-      height: 110vh;
-      margin-top: 5%;
+      height: 100vh;
     }
     
     .ul-list-item{
-      font-size: 1.5rem;
-      color: #c9c0bb;
-      margin-top: 3%;
-      margin-left: 4%;
-      margin-right: auto;
-      font-weight: bold;
-      text-align: center;
-      font-family: "Italiana", serif;
+      font-size: 1.3rem;
+      font-weight:600;
+
     }
     .mealplan-btn-container {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin-top: 5%;
-      height: 20vh;
+      justify-content:flex-end;
+      align-items: flex-end;
+      height: 30vh;
     }
     .mealplan-button {
-      width: 50px 30px;
-      text-align: center;
-      border-radius: 15px;
-      background: #ff6501;
+      padding: 22px 30px;
+     
     }
     
   }

@@ -44,7 +44,7 @@ const Home = () => {
             style={{ backgroundImage: `url(${cancer})` }}
             className="container-img"
           >
-            <h2 className="cancer-heading"> What is Cancer?</h2>
+            <h2 className="cancer-heading"> What Is Cancer?</h2>
 
             <p className="paragraph1">
               The dogmatic view of cancer has been around for a long time. This
@@ -143,7 +143,7 @@ const Home = () => {
                 were exercised and their calories were tightly controlled
               </li>
               <li>
-                While on a ketogenic diet, exercise will burn off excessive
+                While on a ketogenic diet,  aerobic exercise will burn off excessive
                 glucose, putting further stress on the cancer
               </li>
               <li>
