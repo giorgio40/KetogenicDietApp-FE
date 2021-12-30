@@ -39,7 +39,7 @@ function Login() {
       )
       .then((res) => {
         localStorage.setItem("token", res.data.access_token);
-        setIsLoading(true);
+        setIsLoading(false);
         push("/home");
       });
   };
@@ -48,7 +48,7 @@ function Login() {
     <>
       <div className="wrapper" style={{ backgroundImage: `url(${cancer})` }}>
         <div className="h2-container">
-          <h2 className="h2-login"> PLEASE LOG IN</h2>
+          <h2 className="h2-login"> PLEASE LOG  IN</h2>
         </div>
         <div className="form-container">
           <form onSubmit={postLogin} className="login-form">
