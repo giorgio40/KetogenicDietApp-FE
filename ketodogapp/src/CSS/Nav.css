@@ -137,3 +137,49 @@
     border-radius: 15px;
   }
 }
+
+@media(max-width:300px) {
+
+
+.nav {
+  display: flex;
+  flex-direction:column;
+  background: #88bb63;
+  height: 30vh;
+  outline:2px solid red;
+ 
+}
+.nav-links{
+  margin-top: 30px;
+}
+
+.nav-links li {
+font-size:.9rem;
+}
+
+
+
+.logo {
+  border-radius: 50%;
+  height:12vh;
+  margin-top:2%;
+}
+.button-div {
+  max-width: 100%;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 15vh;
+}
+.logout-btn {
+  margin-top: 4%;
+  padding: 16px 26px;
+  text-align: center;
+  background: #d7c446;
+  color: white;
+  border-radius: 15px;
+}
+
+}

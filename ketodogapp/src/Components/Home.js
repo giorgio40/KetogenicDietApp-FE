@@ -44,7 +44,7 @@ const Home = () => {
             style={{ backgroundImage: `url(${cancer})` }}
             className="container-img"
           >
-            <h2 className="cancer-heading"> What is Cancer?</h2>
+            <h2 className="cancer-heading"> What Is Cancer?</h2>
 
             <p className="paragraph1">
               The dogmatic view of cancer has been around for a long time. This
@@ -60,7 +60,7 @@ const Home = () => {
             </p>
 
             <p className="paragraph3">
-              If Cancer is a genetic disease, then why when they did a scientic
+              If Cancer is a genetic disease, then why when they did a scientific
               experiment in the 1960's where they took the mitochondria of a
               cancer cell and put it in a normal cell the cell turned cancerous.
               This theory is called the Metabolic Theory of Cancer.
@@ -76,28 +76,28 @@ const Home = () => {
             <h2 className="keto-heading"> What is a Ketogenic Diet?</h2>
           <div className="ul-container">
             <ul>
-              <li>
+              <li className="ul-list-item">
                 A ketogenic diet is a High Fat, moderate protein, low
                 carbohydrate diet
               </li>
-              <li>
+              <li className="ul-list-item">
                 When your on a ketogenic diet for a period of time you enter
                 into a state of nutritional ketosis
               </li>
-              <li>
+              <li className="ul-list-item">
                 When your in ketosis, ketones are produced by the liver which
                 fuel healthy cells in the body and glucose levels drop
                 dramatically
               </li>
-              <li>
+              <li className="ul-list-item">
                 Cancer cells have damaged mitochondria and cant use ketones, you
                 need healthy mitochondria to use ketones for fuel
               </li>
-              <li>
+              <li className="ul-list-item">
                 Ketogenic diets have been around since the 1920's, They were
                 used for epilepsy in children
               </li>
-              <li>
+              <li className="ul-list-item">
                 The researchers saw that when children were on a ketogenic diet
                 and were <br /> not responsive to anti-seizure medications that
                 there seizures reduced significantly
@@ -143,7 +143,7 @@ const Home = () => {
                 were exercised and their calories were tightly controlled
               </li>
               <li>
-                While on a ketogenic diet, exercise will burn off excessive
+                While on a ketogenic diet,  aerobic exercise will burn off excessive
                 glucose, putting further stress on the cancer
               </li>
               <li>
