@@ -39,7 +39,7 @@ function Login() {
       )
       .then((res) => {
         localStorage.setItem("token", res.data.access_token);
-        setIsLoading(false);
+        setIsLoading(true);
         push("/home");
       });
   };
@@ -52,7 +52,7 @@ function Login() {
         </div>
         <div className="form-container">
           <form onSubmit={postLogin} className="login-form">
-            {isLoading === true ? <div>Loggin you In!</div> : null}
+            {isLoading ? <div>Loggin you In!</div> : null}
 
             <div>{formErrors.username}</div>
             <div>{formErrors.password}</div>
