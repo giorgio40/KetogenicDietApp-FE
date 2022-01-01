@@ -15,7 +15,7 @@ export default function Card(props) {
         </div>
         <div className="link-butn-container">
           <button className="link-button">
-            <a href={props.link}>
+            <a  className="anchor" href={props.link}>
               {props.text}
             </a>
           </button>

@@ -23,8 +23,8 @@ function About(props) {
   return (
     <>
       <Nav />
-      <h2 className="heading">In Loving Memory of Marley</h2>
-      <div className="horizontal-rule">
+      <h2 className="marley-heading">In Loving Memory of Marley</h2>
+      <div className="horizontal-rule1">
         <hr />
       </div>
       <section className="slider">
@@ -43,7 +43,7 @@ function About(props) {
           );
         })}
       </section>
-      <div className="horizontal-rule">
+      <div className="horizontal-rule2">
         <hr />
       </div>
       <p className="about">
