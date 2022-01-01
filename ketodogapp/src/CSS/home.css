@@ -101,10 +101,9 @@
   }
   
   .dogs{
-    height:120vh;
+    height:120vh !important;
     background-repeat:no-repeat cover;
     background-size: cover;
-    outline:5px solid red;
     
   }
 
@@ -120,11 +119,7 @@
   
   
 
-  .mealplan-button {
-    margin-right:5%;
-    text-align: center;
-    border-radius: 15px;
-  }
+ 
 }
 
 @media (min-width: 900px) {
