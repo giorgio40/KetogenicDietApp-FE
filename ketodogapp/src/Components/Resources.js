@@ -22,7 +22,7 @@ function Resources(props) {
             imgsrc={image6}
             link="https://youtu.be/LXaO59IqQm8"
             title="OTTO WARBURG"
-            description="Otto Warburg was a German biochemist from the 1920's who won a Nobel Prize for his research on Cancer. Most oncologists are clueless and haven't heard of him.  Warburg's central Theory was that Cancer cells in the presence of Oxygen are fermenting glucose as a source of ATP , which is how they fuel themselves. He hypothesized that cancer cells have damaged mitochondria and can not use oxygen this is why they made a switch to glucose, This is called the Warburg Effect. He said that the damage to the mitochondria has to be a chronic stressor to cause the mitochondrial damage otherwise the cancer cell will undergo apoptosis which is cell death. The warburg effect can be observed if you have cancer and they inject you with radioactive glucose and the cancer lights up like a Christmas tree."
+            description="Otto Warburg was a German biochemist from the 1920's who won a Nobel Prize for his research on Cancer. Most oncologists are clueless and haven't heard of him.  Warburg's central Theory was that Cancer cells in the presence of Oxygen are fermenting glucose as a source of ATP , which is how they fuel themselves. He hypothesized that cancer cells have damaged mitochondria and can not use oxygen this is why they made a switch to glucose, This is called the Warburg Effect. He said that the damage to the mitochondria has to be a chronic stressor to cause the mitochondrial damage otherwise the cancer cell will undergo apoptosis which is cell death. The warburg effect can be observed if you have cancer and they inject you with radioactive glucose when you have a pet scan and the cancer lights up like a Christmas tree."
             text="click to watch video"
           />
         </div>
@@ -48,7 +48,7 @@ function Resources(props) {
           <Card
             imgsrc={image1}
             link="https://youtu.be/sZv62GPCX4A"
-            title="Dr.ANGELA POFF"
+            title="DR.ANGELA POFF"
             description="Angela completed her graduate work at the University of South Florida where she earned a Master’s degree and Ph.D. in Medical Sciences.  Angela worked as a postdoctoral research scholar in the Department of Molecular Pharmacology and Physiology at USF from 2014 – 2015.  Her research focuses on the development and characterization of metabolic-based, non-toxic therapies for cancer and neurological disorders.  She has presented her work at many national and international scientific conferences, including the Keystone Symposia on Tumor Metabolism, Federation of American Societies for Experimental Biology, and the Global Symposium on Ketogenic Therapies."
             text="click to watch video"
           />
