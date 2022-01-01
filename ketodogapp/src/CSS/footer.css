@@ -106,7 +106,9 @@
   }
 
   .links {
-    margin-top: 0 !important;
+    margin:2% !important;
+    font-weight:bold;
+    color:bisque !important;
   }
   .section {
     display: flex;
@@ -121,12 +123,15 @@
     align-items: center;
     text-align: center;
     margin: 3%;
+    margin-top:6%;
+  
   }
 
   .footer-right a {
     text-decoration: none;
     color: white;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    margin-top:2% !important;
   }
 
   .footer-right div {
@@ -134,7 +139,7 @@
   }
 
   .footer-left {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -179,7 +184,7 @@
     width: 50%;
     height: 12vh;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .footer-left a {
@@ -207,12 +212,10 @@
   .footer-right {
     display: flex column;
     width: 50%;
-    height: 55%;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1.4rem !important;
-    margin: 3%;
   }
 
   .footer-right a {
@@ -227,9 +230,8 @@
   .footer-left {
     display: inline-block;
     width: 50%;
-    height: 20vh;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .footer-left a {
@@ -241,3 +243,57 @@
   }
 }
 
+@media (min-width:1600px) {
+  @media(min-width: 600px) {
+    .footer-container {
+      display: flex column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .footer-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      color: white;
+      height: 26vh;
+      opacity: 0.9;
+    }
+  
+    .links {
+      margin-top: 0 !important;
+    }
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-right {
+      display: flex column;
+      width: 50%;
+      height: 20vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 3%;
+    }
+  
+    .footer-right a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+    }
+  
+    .footer-right div {
+      margin: 1%;
+    }
+  
+    .footer-left {
+      font-size: 1.4rem;
+      margin-bottom:4%;
+    }
+  }
+  
+  
+}
