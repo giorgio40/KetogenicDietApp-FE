@@ -38,8 +38,8 @@
   width: 100%;
 }
 
-label {
-  color: white;
+.signup-label{
+
 }
 
 .signup-button {
@@ -75,7 +75,7 @@ label {
     font-weight: bold;
   }
 
-  label {
+  .signup-label {
     font-size: 0.6rem !important;
   }
 

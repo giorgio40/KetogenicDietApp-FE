@@ -59,7 +59,7 @@ function MealPlan() {
           </p>
         </div>
         <form className="form-weight" onSubmit={handleSubmit}>
-          <label htmlFor="weight">
+          <label className="form-weight-label" htmlFor="form-weight">
             Please Select your dog's weight:
             <select
               value={formState.weight}
