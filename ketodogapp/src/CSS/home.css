@@ -84,11 +84,11 @@
 @media (max-width:599px) {
 
   .container-img {
-    height: 50vh;
+    height: 60vh;
     margin-top: 5%;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-  
+6
   .cancer-heading {
     font-size: 1.6rem;
    
@@ -98,17 +98,18 @@
     font: size 1rem;
     text-align: center;
     margin-top: 3%;
-    margin-bottom: 8%;
+    margin-bottom: 9%;
   }
   .paragraph2 {
     font: size 1rem;
     text-align: center;
-    margin-bottom: 8%;
+    margin-bottom: 9%;
   }
   .paragraph3 {
     font: size 1rem;
     text-align: center;
     margin-top: 3%;
+    margin-bottom: 9%;
   }
   
   .keto-heading {
@@ -117,7 +118,7 @@
   }
   
   .keto-img {
-    height:60vh;
+    height:80vh;
     margin-top:5%;
   }
   
@@ -144,7 +145,7 @@
   }
 
   .dogs{
-    height:50vh;
+    height:70vh;
     margin-bottom:5%;
   }
   
@@ -161,7 +162,7 @@
 
   .container-img{
     margin-top:5%;
-    height:60vh;
+    height:70vh;
   }
     
   .cancer-heading {
@@ -170,30 +171,30 @@
 
   }
  .paragraph1{
-   font-size:1.4rem;
+   font-size:1.2rem;
    margin-bottom:8%;
  }
 
   .paragraph2{
-    font-size:1.4rem;
+    font-size:1.2rem;
     margin-bottom:8%;
   }
 
   .paragraph3{
-    font-size:1.4rem;
+    font-size:1.2rem;
   }
   .keto-heading {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     text-align: center;
   }
   
   .keto-img {
-    height: 60vh;
+    height: 80vh;
     margin-bottom:1%;
   }
   
   .ul-list-item{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight:600;
 
   }
@@ -206,12 +207,19 @@
     
    
   }
+
+  .keto-headin{
+    font-size:1.5rem;
+    text-align:center;
+    color:grey;
+    margin-bottom:5%;
+  }
   .dogs{
-    height:50vh;
+    height:75vh;
     margin-bottom:5%;
   }
   .unordered-list{
-    font-size:1.4rem;
+    font-size:1.3rem;
     color:antiquewhite;
     
   }
@@ -250,11 +258,11 @@
   }
 
   .ul-list-item {
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
   }
 
   .mealplan-button {
-    margin-right:8%;
+    margin-left:9%;
     }
   .unordered-list {
     margin-top: 5%;

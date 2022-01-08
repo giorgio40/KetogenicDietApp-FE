@@ -150,7 +150,7 @@
 
   .footer-section {
   
-    height: 25vh !important;
+    height: 30vh !important;
   }
 
   
@@ -162,7 +162,6 @@
   .footer-right {
     display: flex column;
     width: 50%;
-    height: 17vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -182,7 +181,6 @@
   .footer-left {
     display: inline-block;
     width: 50%;
-    height: 12vh;
     text-align: center;
     font-size: 1.3rem;
   }
@@ -203,11 +201,11 @@
     align-items: center;
     background: black;
     color: white;
+    max-height:35vh;
 
   }
 
-  .links {
-  }
+
 
   .footer-right {
     display: flex column;
@@ -215,12 +213,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.4rem !important;
+    font-size: 1.3rem !important;
+    margin-bottom:4%;
   }
 
   .footer-right a {
     text-decoration: none;
     color: white;
+    font-size:1.3rem;
   }
 
   .footer-right div {
@@ -232,6 +232,7 @@
     width: 50%;
     text-align: center;
     font-size: 1.4rem;
+    margin-bottom:4%;
   }
 
   .footer-left a {

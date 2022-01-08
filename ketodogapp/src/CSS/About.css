@@ -250,8 +250,9 @@
   
   .dog-img {
     width: 500px;
-    height: 600px;
+    height: 500px;
     border-radius: 10px;
+    margin-bottom:13%;
   }
   
   .right-arrow {
@@ -296,20 +297,21 @@
   .about {
     text-align: center;
     font-family: "Italiana", serif;
-    font-weight: 500;
-    font-size: .9rem;
+    font-weight: bold;
+    font-size: 1.3rem;
     margin-bottom: 25px;
   }
   
   .horizontal-rule1 {
-    margin-top:10%;
+    margin-bottom:10%;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .horizontal-rule2 {
-    margin-bottom:10%;
+    position:relative;
+    top:14%;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
