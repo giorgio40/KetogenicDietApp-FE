@@ -51,7 +51,6 @@
   justify-content: center;
   align-items: center;
   position:relative;
-  left:17%;
 }
 
 .buttn {
@@ -110,7 +109,8 @@
     }
   
   .buttn {
-    padding:16px 22px;
+    padding:16px 20px;
+  
     
     
   }
@@ -215,14 +215,9 @@
     text-align: center;
     height: 5vh;
     margin: 3%;
-    width: 75% !important;
+    width: 91% !important;
   }
-
-  .button-container{
-    width:85%;
-  }
-  
-  .buttn {
+ .buttn {
 
     padding:10px 18px !important;
    
