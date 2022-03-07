@@ -29,7 +29,7 @@
 }
 
 .footer-left {
-  display: inline-block;
+  display: flex;
   width: 50%;
   height: 12vh;
   text-align: center;
