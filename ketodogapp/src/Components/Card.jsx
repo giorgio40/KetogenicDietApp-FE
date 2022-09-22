@@ -5,13 +5,13 @@ export default function Card(props) {
     <>
       <div className="card-container">
         <div className="image-container">
-          <img src={props.imgsrc} alt="" />
+          <img className="image" src={props.imgsrc} alt="" />
         </div>
-        <div className="card-title">
-          <h3>{props.title}</h3>
+        <div className="card-title-container">
+          <h3 className="card-title">{props.title}</h3>
         </div>
         <div className="card-body">
-          <p>{props.description} </p>
+          <p className="card-paragraph">{props.description} </p>
         </div>
         <div className="link-butn-container">
           <button className="link-button">

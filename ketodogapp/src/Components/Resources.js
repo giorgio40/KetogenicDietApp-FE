@@ -66,7 +66,7 @@ function Resources(props) {
             imgsrc={image4}
             link="http://longlivingpets.com"
             title="THOMAS SANDBERG"
-            description="Thomas Sandberg has devoted his life to helping naturally heal dogs and cats that have cancer. He is an Animal Naturopath and he used Amygdalin and a variety of supplements depending on the cancer and what he has researched to help heal animals. He is the founder of longlivingpets.com"
+            description="Thomas Sandberg has devoted his life to helping naturally heal dogs and cats that have cancer. He is an Animal Naturopath and he uses a raw ketogenic diet and Amygdalin and a variety of supplements depending on the cancer and what he has researched to help heal animals. He is the founder of longlivingpets.com"
             text="click to go to longlivingpets.com"
           />
         </div>

@@ -13,6 +13,7 @@ function Nav() {
   };
 
   return (
+  
     <nav className="nav">
       <div className="cross-container">
         <img src={Logo} alt="medical cross" className="logo" />
@@ -39,6 +40,7 @@ function Nav() {
         </div>
       </div>
     </nav>
+  
   );
 }
 

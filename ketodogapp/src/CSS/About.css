@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap");
-
 .slider {
   position: relative;
   height: 80vh;
@@ -48,13 +46,13 @@
   transform: scale(1.08);
 }
 
-.marley-heading{
+.marley-heading {
   margin-top: 80px;
   font-family: "Italiana";
-  font-size: 2.5rem;
-  color:#dccd68;
+  font-size: 3rem;
+  color: #dccd68;
   text-align: center;
-  margin-bottom:8%;
+  margin-bottom: 8%;
 }
 
 .about {
@@ -67,448 +65,123 @@
 
 .horizontal-rule1 {
   margin-bottom: 15px;
-  width: 50%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .horizontal-rule2 {
   margin-bottom: 15px;
-  width: 50%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width:599px) {
 
-  .slider {
-    position: relative;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
-  
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .dog-img {
-    width: 325px;
-    height: 400px;
+    width: 240px;
+    height: 300px;
     border-radius: 10px;
   }
-  
+
   .right-arrow {
-    position: absolute;
     top: 50%;
     right: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
+    font-size: 1rem;
   }
-  
+
   .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
+    font-size: 1rem;
   }
-  
-  .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
+
+  .marley-heading {
+    font-size: 1.7rem;
   }
-  
-  .slide-active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-  }
-  
-  .heading {
-    margin-top: 70px;
-    font-family: "Italiana";
-    font-size: 3rem;
-  }
-  
+
   .about {
     text-align: center;
     font-family: "Italiana", serif;
     font-weight: 500;
-    font-size: .9rem;
-    margin-bottom: 25px;
+    line-height: 2rem;
+    font-size: 1rem;
   }
-  
-  .horizontal-rule1 {
-    margin-top:10%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .horizontal-rule2 {
-    margin-bottom:10%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .dog-img {
+    width: 370px;
+    height: 350px;
   }
 
+  .right-arrow {
+   
+    font-size: 1.5rem;
+  }
 
+  .left-arrow {
+    font-size: 1.5rem;
+  }
 
+  .marley-heading {
+    font-size: 1.7rem;
+  }
 
+  .about {
+    
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
 }
 
-@media (min-width:600px) {
-
-
-  
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .dog-img {
-    width: 400px;
-    height:500px;
-    border-radius: 10px;
+    width: 420px;
+    height: 400px;
   }
-  
+
   .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  
-  .slide-active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-  }
-  
-  .marley-heading {
-    margin-top: 70px;
-    font-family: "Italiana";
+   
     font-size: 2rem;
   }
-  
-  .about {
-    text-align: center;
-    font-family: "Italiana", serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    margin-bottom: 25px;
-  }
-  
-  .horizontal-rule1 {
-    margin-top:10%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  .horizontal-rule2 {
-    margin-bottom:10%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-
-
-}
-
-@media (min-width:900px) {
-
-  .slider {
-    position: relative;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
-  
-  .dog-img {
-    width: 500px;
-    height: 500px;
-    border-radius: 10px;
-    margin-bottom:13%;
-  }
-  
-  .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
   .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
+    font-size: 2rem;
   }
-  
-  .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  
-  .slide-active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-  }
-  
+
   .marley-heading {
-    margin-top: 70px;
-    font-family: "Italiana";
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
-  
+
   .about {
-    text-align: center;
-    font-family: "Italiana", serif;
-    font-weight: bold;
-    font-size: 1.3rem;
-    margin-bottom: 25px;
+    
+    line-height: 2rem;
+    font-size: 1.5rem;
+    text-align:center;
   }
-  
-  .horizontal-rule1 {
-    margin-bottom:10%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .horizontal-rule2 {
-    position:relative;
-    top:14%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-
-
 }
 
-@media (min-width:1200px) {
-
-  .slider {
-    position: relative;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
-  
+@media screen and (min-width: 1025px) and (max-width: 1200x) {
   .dog-img {
-    width: 600px;
-    height: 500px;
-    border-radius: 10px;
+    width: 300px;
+    height: 400px;
   }
-  
+
   .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
+   
+    font-size: 1.7rem;
   }
-  
+
   .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  
-  .slide-active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-  }
-  
-  .heading {
-    margin-top: 70px;
-    font-family: "Italiana";
-    font-size: 3rem;
-  }
-  
-  .about {
-    text-align: center;
-    font-family: "Italiana", serif;
-    font-weight: 500;
-    font-size: 1.6rem;
-    margin-bottom: 25px;
-  }
-  
-  .horizontal-rule1 {
-    margin-top:10%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.7rem;
   }
 
-  .horizontal-rule2 {
-    margin-bottom:10%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-
-
-}
-
-
-@media (min-width:1600px) {
-
-  .slider {
-    position: relative;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
-  
-  .dog-img {
-    width: 700px;
-    height: 500px;
-    border-radius: 10px;
-  }
-  
-  .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  
-  .slide-active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-  }
-  
   .marley-heading {
-    margin-top: 70px;
-    font-family: "Italiana";
-    font-size: 3.5rem;
+    font-size: 2.3rem;
   }
-  
+
   .about {
-    text-align: center;
-    font-family: "Italiana", serif;
-    font-weight: 500;
-    font-size: 1.6rem;
-    margin-bottom: 25px;
+    
+    line-height: 2rem;
+    font-size: 1.5rem;
+    text-align:center;
   }
-  
-  .horizontal-rule1 {
-    margin-top:10%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .horizontal-rule2 {
-    margin-bottom:10%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
