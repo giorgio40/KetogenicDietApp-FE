@@ -32,7 +32,7 @@ function Footer() {
         </div>
       </section>
       <section className="footer-left">
-        <div>
+        <div classname="link-conainer">
           Contact
           <br />
           <br />
@@ -43,7 +43,7 @@ function Footer() {
           <br />
           <br />
         </div>
-        <div>Copyright &copy;2021</div> <br />
+        <div className="link-containers">Copyright &copy;2021</div> 
         <div>TECH SOLUTIONS INC</div>
       </section>
     </section>
