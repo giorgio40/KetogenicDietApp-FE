@@ -49,7 +49,7 @@
 .marley-heading {
   margin-top: 80px;
   font-family: "Italiana";
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #dccd68;
   text-align: center;
   margin-bottom: 8%;
@@ -65,14 +65,14 @@
 
 .horizontal-rule1 {
   margin-bottom: 15px;
-  width: 50%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .horizontal-rule2 {
   margin-bottom: 15px;
-  width: 50%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -102,7 +102,7 @@
     text-align: center;
     font-family: "Italiana", serif;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 2rem;
     font-size: 1rem;
   }
 }
@@ -135,6 +135,33 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .dog-img {
     width: 420px;
+    height: 400px;
+  }
+
+  .right-arrow {
+   
+    font-size: 2rem;
+  }
+
+  .left-arrow {
+    font-size: 2rem;
+  }
+
+  .marley-heading {
+    font-size: 2.3rem;
+  }
+
+  .about {
+    
+    line-height: 2rem;
+    font-size: 1.5rem;
+    text-align:center;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200x) {
+  .dog-img {
+    width: 300px;
     height: 400px;
   }
 
