@@ -14,8 +14,7 @@ function Login() {
     password: "",
   };
 
-
- // eslint-disable-next-line
+  // eslint-disable-next-line
   const [disabled, setDisabled] = useState();
   const [isLoading, setIsLoading] = useState(false);
   //eslint-disable-next-line
@@ -48,7 +47,7 @@ function Login() {
     <>
       <div className="wrapper" style={{ backgroundImage: `url(${cancer})` }}>
         <div className="h2-container">
-          <h2 className="h2-login"> PLEASE LOG  IN</h2>
+          <h2 className="h2-login"> PLEASE LOG IN</h2>
         </div>
         <div className="form-container">
           <form onSubmit={postLogin} className="login-form">
