@@ -13,12 +13,12 @@ function Nav() {
   };
 
   return (
-  
-    <nav className="nav">
-      <div className="cross-container">
+    <nav>
+      <div className="nav-container">
+      <div className="logo-container">
         <img src={Logo} alt="medical cross" className="logo" />
       </div>
-      <ul className="nav-links">
+      <div className="nav-links">
         <Link to="/home" style={{ textDecoration: "none" }}>
           <li>Home</li>
         </Link>
@@ -31,7 +31,7 @@ function Nav() {
         <Link to="/about" style={{ textDecoration: "none" }}>
           <li>About</li>
         </Link>
-      </ul>
+      </div>
       <div className="btn-div">
         <div className="button-div">
           <button className="logout-btn" onClick={handleClick}>
@@ -39,8 +39,8 @@ function Nav() {
           </button>
         </div>
       </div>
-    </nav>
-  
+    </div>
+  </nav>
   );
 }
 
