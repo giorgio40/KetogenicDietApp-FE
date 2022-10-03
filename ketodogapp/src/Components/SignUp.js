@@ -37,8 +37,7 @@ function SignUp() {
       .then((res) => {
         setSignUp([res.data, ...signUp]);
         setFormValues(initialFormValues);
-        console.log(res.data);
-        console.log(newSignUp);
+        
         setIsLoading(true);
 
         push("/login");

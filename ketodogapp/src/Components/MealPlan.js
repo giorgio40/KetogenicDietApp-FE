@@ -3,8 +3,8 @@ import { axiosAuth } from "../Axios/axiosAuth";
 import MealPlanData from "../Components/MealPlanData";
 import mealplanimage from "../Images/mealplanimage.png";
 import "../CSS/mealplan.css";
-import Nav from "./Nav";
 import Footer from "./Footer";
+import NavBar from "../Navbar/NavBar";
 
 function MealPlan() {
   const [formState, setFormState] = useState({
@@ -31,7 +31,7 @@ function MealPlan() {
   };
   return (
     <>
-      <Nav />
+      <NavBar />
       <div
         className="mealplan-wrapper"
         style={{ backgroundImage: `url(${mealplanimage})` }}

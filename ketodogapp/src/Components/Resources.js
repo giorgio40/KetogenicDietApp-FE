@@ -7,7 +7,7 @@ import image3 from "../Images/drnations.jpg";
 import image4 from "../Images/thomassandberg.jpg";
 import image5 from "../Images/thomasseyfried.png";
 import image6 from "../Images/warburg.jpg";
-import Nav from "./Nav";
+import NavBar from "../Navbar/NavBar.js"
 import Footer from "./Footer";
 
 import "../CSS/Resources.css";
@@ -15,7 +15,7 @@ import "../CSS/Resources.css";
 function Resources(props) {
   return (
     <>
-      <Nav />
+      <NavBar />
       <div>
         <div>
           <Card
