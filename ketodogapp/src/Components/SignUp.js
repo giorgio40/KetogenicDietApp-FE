@@ -162,8 +162,13 @@ function SignUp() {
             </div>
         </form>
         <div className="link">
+<<<<<<< HEAD
           <Link className="link" to="/login" style={{ textDecoration: "none", color: "white" }}>
             Already a Member ? Click here to goto Login Page{" "}
+=======
+          <Link to="/login" style={{ textDecoration: "none", color: "#9dc67f" }}>
+          <div> Already a Member ? Click here to goto Login Page</div>
+>>>>>>> 5f22c4a33a738068f8ddcf2f4fd26252f3213d1b
           </Link>
         </div>
       </div>

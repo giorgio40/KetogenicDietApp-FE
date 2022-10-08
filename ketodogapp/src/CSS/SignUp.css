@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@1,300&display=swap");
 
 
@@ -12,13 +13,25 @@
 .title {
   color:#dccd68;
   text-shadow: 0 2px 1px #9a3b4d;
+=======
+@media (min-width: 768px) {}
+.img-container {
+  background-size: cover;
+  background-repeat: no-repeat cover;
+  width: 100%;
+  height:150vh;
+}
+
+.title {
+  color:#DCE2E2;
+>>>>>>> 5f22c4a33a738068f8ddcf2f4fd26252f3213d1b
   text-align: center;
   padding: 20px;
   font-weight: bold;
   font-size: 2.7rem;
   margin-bottom:6%;
   font-family: Italiana, serif;
-  
+  text-shadow: 2px 2px black; 
 }
 
 .signup-form {
