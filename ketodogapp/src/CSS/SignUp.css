@@ -92,6 +92,42 @@ label{
 }
 
 
+@media (max-width:600px) {
 
+  
+  .title {
+   
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom:10%;
+  
+    
+  }
+  
+  .signup-form {
+    width: 300px;
+    margin-bottom:15%;
+  
+  }
+  
+  
+  
+
+  
+  .signup-button {
+  
+    margin-top:5%;
+  }
+  
+  
+    
+
+  
+  .link {
+    font-size: 1.1rem;
+    
+  }
+  
+}
   
  
