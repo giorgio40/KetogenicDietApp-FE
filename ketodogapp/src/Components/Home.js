@@ -5,7 +5,7 @@ import "../CSS/home.css";
 import keto from "../Images/ketogenic-diet-for-dogs.jpg";
 import { Link } from "react-router-dom";
 import dogs from "../Images/dogs.jpg";
-import Nav from "./Nav"
+import NavBar from "../Navbar/NavBar";
 import Footer from "./Footer"
 
 
@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <>
-    <Nav/>
+    <NavBar/>
       <animated.div style={props}>
         <div className="div">
           <div

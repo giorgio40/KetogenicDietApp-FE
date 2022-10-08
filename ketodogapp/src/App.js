@@ -1,4 +1,3 @@
-import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import SignUp from "./Components/SignUp";
 import Login from "./Components/Login";
@@ -14,7 +13,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <main>
+        
           <Switch>
             <PrivateRoute exact path="/home" component={Home} />
             <PrivateRoute path="/resources" component={Resources} />
@@ -27,7 +26,7 @@ function App() {
 
           <Route exact path="/" component={SignUp} />
           <Route path="/login" component={Login} />
-        </main>
+        
       </div>
     </>
   );

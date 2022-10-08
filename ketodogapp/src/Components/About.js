@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { SliderData } from "../Components/SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "../CSS/About.css";
-import Nav from "./Nav";
 import Footer from "./Footer";
+import NavBar from "../Navbar/NavBar";
 function About(props) {
   const { slides } = props;
 
@@ -22,7 +22,7 @@ function About(props) {
   };
   return (
     <>
-      <Nav />
+      <NavBar />
       <h2 className="marley-heading">In Loving Memory of Marley</h2>
       <div className="horizontal-rule1">
         <hr />

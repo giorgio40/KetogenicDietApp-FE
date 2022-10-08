@@ -37,8 +37,7 @@ function SignUp() {
       .then((res) => {
         setSignUp([res.data, ...signUp]);
         setFormValues(initialFormValues);
-        console.log(res.data);
-        console.log(newSignUp);
+        
         setIsLoading(true);
 
         push("/login");
@@ -105,8 +104,7 @@ function SignUp() {
         style={{ backgroundImage: `url(${keto})` }}
       >
         {isLoading ? <div>Signing you up!</div> : null}
-        <br />
-        <br />
+       
         <h1 className="title">
           Welcome to Ketogenic Diets For Dog Cancer! Please Sign Up To Access
           Important Resources!
@@ -119,8 +117,8 @@ function SignUp() {
               <div>{formErrors.password}</div>
             </em>
           </div>
-          <div>
-            <label className="signup-label">
+        
+            <label >
               Username:
               <input
                 type="text"
@@ -131,11 +129,9 @@ function SignUp() {
                 placeholder="Username"
               />
             </label>
-            <br />
-            <br />
-            <br />
+           
 
-            <label className="signup-label">
+            <label>
               Password:
               <input
                 type="password"
@@ -146,10 +142,8 @@ function SignUp() {
                 placeholder="password"
               />
             </label>
-            <br />
-            <br />
-            <br />
-            <label className="signup-label">
+          
+            <label>
               Email:
               <input
                 type="email"
@@ -160,19 +154,21 @@ function SignUp() {
                 placeholder="email"
               />
             </label>
-            <br />
-            <br />
-            <br />
-            <div className="submit">
+         
+            <div className="signup-button-container">
               <button className="signup-button" disabled={disabled}>
                 Sign Up
               </button>
             </div>
-          </div>
         </form>
         <div className="link">
-          <Link to="/login" style={{ textDecoration: "none", color: "white" }}>
+<<<<<<< HEAD
+          <Link className="link" to="/login" style={{ textDecoration: "none", color: "white" }}>
             Already a Member ? Click here to goto Login Page{" "}
+=======
+          <Link to="/login" style={{ textDecoration: "none", color: "#9dc67f" }}>
+          <div> Already a Member ? Click here to goto Login Page</div>
+>>>>>>> 5f22c4a33a738068f8ddcf2f4fd26252f3213d1b
           </Link>
         </div>
       </div>
