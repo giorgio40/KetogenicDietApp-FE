@@ -37,6 +37,7 @@ function SignUp() {
       .then((res) => {
         setSignUp([res.data, ...signUp]);
         setFormValues(initialFormValues);
+        console.log(res.data);
         
         setIsLoading(true);
 
@@ -46,9 +47,7 @@ function SignUp() {
         console.log(err);
       });
   };
-  useEffect(() => {
-    postNewSignUp();
-  }, []);
+  
 
   const inputChange = (name, value, evt) => {
     yup
@@ -94,8 +93,9 @@ function SignUp() {
 
   const onSubmit = (evt) => {
     evt.preventDefault();
-    formSubmit();
-  };
+    formSubmit()
+  }
+ 
 
   return (
     <>
@@ -126,7 +126,7 @@ function SignUp() {
                 onChange={onChange}
                 name="username"
                 id="name-input"
-                placeholder="Username"
+                placeholder="username"
               />
             </label>
            
@@ -138,8 +138,9 @@ function SignUp() {
                 value={formValues.password}
                 onChange={onChange}
                 name="password"
-                id="password-input"
+                id="pwd-input"
                 placeholder="password"
+                maxLength="30"
               />
             </label>
           
@@ -162,13 +163,8 @@ function SignUp() {
             </div>
         </form>
         <div className="link">
-<<<<<<< HEAD
-          <Link className="link" to="/login" style={{ textDecoration: "none", color: "white" }}>
-            Already a Member ? Click here to goto Login Page{" "}
-=======
-          <Link to="/login" style={{ textDecoration: "none", color: "#9dc67f" }}>
+          <Link to="/login" style={{ textDecoration: "none", color: "#fff" }}>
           <div> Already a Member ? Click here to goto Login Page</div>
->>>>>>> 5f22c4a33a738068f8ddcf2f4fd26252f3213d1b
           </Link>
         </div>
       </div>
