@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import "../CSS/Login.css";
-import cancer from "../Images/cancer.jpg";
+import LoginSchema from "../schema/LoginSchema";
+import * as yup from "yup";
+import cancer from "../Images/128694-cancer.webp"
 function Login() {
   const initialFormErrors = {
     username: "",
@@ -14,6 +16,11 @@ function Login() {
     password: "",
   };
 
+  const onChange = (evt) => {
+    const { name, value } = evt.target;
+    inputChange(name, value);
+  };
+
   // eslint-disable-next-line
   const [disabled, setDisabled] = useState();
   const [isLoading, setIsLoading] = useState(false);
@@ -22,8 +29,8 @@ function Login() {
   const [credentials, setCredentials] = useState(initialFormValues);
   const { push } = useHistory();
 
+  
   const postLogin = (e) => {
-    e.preventDefault();
     axios
       .post(
         "https://dogdietapp.herokuapp.com/login",
@@ -42,54 +49,91 @@ function Login() {
         push("/home");
       });
   };
+  const inputChange = (name, value, evt) => {
+    yup
+      .reach(LoginSchema, name)
+      .validate(value)
+      .then(() => {
+        setFormErrors({
+          ...formErrors,
+          [name]: "",
+        });
+      })
+      .catch((err) => {
+        setFormErrors({
+          ...formErrors,
+          [name]: err.errors[0],
+        });
+      });
+
+    setCredentials({
+      ...credentials,
+      [name]: value,
+    });
+  };
+
+  const onSubmit = (evt) => {
+    evt.preventDefault();
+    postLogin();
+  };
+
+
 
   return (
     <>
-      <div className="wrapper" style={{ backgroundImage: `url(${cancer})` }}>
-        <div className="h2-container">
-          <h2 className="h2-login"> PLEASE LOG IN</h2>
-        </div>
-        <div className="form-container">
-          <form onSubmit={postLogin} className="login-form">
-            {isLoading ? <div>Loggin you In!</div> : null}
-
-            <div>{formErrors.username}</div>
-            <div>{formErrors.password}</div>
-            <label className="login-label">
+      <div className="container"
+      style={{ backgroundImage: `url(${cancer})` }}>
+      {isLoading ? <div>loggin you in!</div> : null}
+      <div>
+      <h3 className="text">Please Login to view resources about dog cancer and the ketogenic diet</h3>
+      </div>
+      <div className="form-container">
+  
+        <form onSubmit={onSubmit} className="login-form">
+          <div>
+            <em>
+              <div>{formErrors.username}</div>
+              <div>{formErrors.password}</div>
+            </em>
+          </div>
+        
+            <label >
               Username:
               <input
                 type="text"
-                name="username"
                 value={credentials.username}
-                onChange={(evt) =>
-                  setCredentials({ ...credentials, username: evt.target.value })
-                }
-                id="username"
-                placeholder="username"
+                onChange={onChange}
+                name="username"
+                id="name-input"
+                placeholder="Username"
               />
             </label>
-            <label className="login-label">
+           
+
+            <label>
               Password:
               <input
                 type="password"
-                name="password"
                 value={credentials.password}
-                onChange={(evt) =>
-                  setCredentials({ ...credentials, password: evt.target.value })
-                }
-                placeholder="password"
+                onChange={onChange}
+                name="password"
                 id="password-input"
+                placeholder="password"
               />
             </label>
-            <br />
-            <div className="button-container">
-              <button className="buttn" disabled={disabled}>
-                Log in
-              </button>
+          
+           
+         
+            <div className="login-button-container">
+              <button className="login-button" disabled={disabled}>
+              Login
+             </button>
             </div>
-          </form>
+        </form>
         </div>
       </div>
+      
+    
     </>
   );
 }

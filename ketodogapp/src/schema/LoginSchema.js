@@ -8,7 +8,7 @@ export default yup.object().shape({
 
   password: yup
     .string()
-    .required("Valid Passwordr is required")
+    .required("Valid Password is required")
     .min(
       10,
       "password should be at least a mix of ten characters, symbols and numbers"
